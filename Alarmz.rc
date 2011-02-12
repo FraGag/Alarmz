@@ -1,0 +1,45 @@
+/* Alarmz - A program to show user-defined alarms
+   Copyright (C) 2010 Francis Gagné <fragag1@gmail.com>
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+#include "version.h"
+
+1 ICON Alarmz.ico
+
+1 VERSIONINFO
+FILEVERSION ALARMZ_VERSION_MAJOR, ALARMZ_VERSION_MINOR, ALARMZ_VERSION_REVISION, ALARMZ_VERSION_BUILD
+PRODUCTVERSION ALARMZ_VERSION_MAJOR, ALARMZ_VERSION_MINOR, ALARMZ_VERSION_REVISION, ALARMZ_VERSION_BUILD
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "Francis Gagné"
+            VALUE "FileDescription", "Alarmz"
+            VALUE "FileVersion", ALARMZ_VERSION_STR
+            VALUE "InternalName", "Alarmz"
+            VALUE "LegalCopyright", "Copyright © 2010 Francis Gagné"
+            VALUE "OriginalFilename", "Alarmz.exe"
+            VALUE "ProductName", "Alarmz"
+            VALUE "ProductVersion", ALARMZ_VERSION_STR
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1252
+    END
+END

@@ -1,0 +1,89 @@
+*
+{
+    font-family: sans-serif;
+}
+
+html
+{
+    background-color: rgb(255, 232, 208);
+    color: black;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4
+{
+    border-left: 4pt solid rgb(255, 160, 96);
+    border-bottom: 1pt solid rgb(255, 160, 96);
+    padding-left: 4pt;
+}
+
+dt
+{
+    font-size: 120%;
+    font-weight: bold;
+    margin-top: 0.25em;
+}
+
+dt h4
+{
+    font-size: 90%;
+}
+
+small
+{
+    font-size: 70%;
+}
+
+#toc, #content
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: auto;
+    padding-left: 8pt;
+    padding-right: 8pt;
+}
+
+#toc:focus, #content:focus
+{
+    outline-offset: -1px;
+}
+
+#toc
+{
+    left: 0;
+    width: 133pt; /* 150pt - 1pt for border - 16pt for left+right paddings */
+    background-color: rgb(255, 244, 232);
+    border-right: 1pt solid white;
+}
+
+#toc ul
+{
+    list-style-position: inside;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#content
+{
+    left: 150pt;
+    right: 0;
+    border-left: 1pt solid silver;
+}
+
+dt.after-separator
+{
+    border-top: 2pt groove;
+    margin-top: 0.4em;
+    padding-top: 0.4em;
+}
+
+.accesskey
+{
+    text-decoration: underline;
+}
+
+.missing
+{
+    color: red;
+}

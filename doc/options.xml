@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="help.xsl" type="text/xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="urn:x">
+    <head>
+        <title>
+            Alarmz - <x:string id="page_options" />
+        </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="toc"></div>
+        <div id="content">
+            <h2>
+                <x:string id="page_options" />
+            </h2>
+            <p>
+                <x:string id="options" />
+            </p>
+            <x:optiongroup>
+                <x:option id="language" />
+                <x:option id="autosave" />
+            </x:optiongroup>
+            <x:optiongroup id="startup">
+                <x:option id="runonsessionstartup" />
+                <x:option id="openthisfileonstartup" />
+            </x:optiongroup>
+            <x:optiongroup id="toasts">
+                <x:optiongroup id="colors">
+                    <x:option id="background" />
+                    <x:option id="gradient" />
+                    <x:option id="text" />
+                    <x:option id="toasts" />
+                    <x:option id="snoozebutton" />
+                    <x:option id="closebutton" />
+                </x:optiongroup>
+                <x:option id="usenativeborder" />
+                <x:option id="corner" />
+                <x:option id="direction" />
+                <x:option id="toastemergence">
+                    <ul>
+                        <li>
+                            <strong><x:string id="option_toasts_toastemergence_sudden" /></strong>:
+                            <x:string id="option_toasts_toastemergence_sudden_desc" />
+                        </li>
+                        <li>
+                            <strong><x:string id="option_toasts_toastemergence_roll" /></strong>:
+                            <x:string id="option_toasts_toastemergence_roll_desc" />
+                        </li>
+                        <li>
+                            <strong><x:string id="option_toasts_toastemergence_fade" /></strong>:
+                            <x:string id="option_toasts_toastemergence_fade_desc" />
+                        </li>
+                    </ul>
+                </x:option>
+                <x:option id="playsound" />
+                <x:option id="snoozeduration" />
+            </x:optiongroup>
+        </div>
+    </body>
+</html>

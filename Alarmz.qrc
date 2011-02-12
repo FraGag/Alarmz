@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/silk">
+        <file>silk/page_white.png</file>
+        <file>silk/folder_page_white.png</file>
+        <file>silk/disk.png</file>
+        <file>silk/add.png</file>
+        <file>silk/pencil.png</file>
+        <file>silk/delete.png</file>
+        <file>silk/help.png</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>Alarmz.ico</file>
+    </qresource>
+</RCC>

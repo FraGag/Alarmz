@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="help.xsl" type="text/xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="urn:x">
+    <head>
+        <title>
+            Alarmz - <x:string id="page_toasts" />
+        </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="toc"></div>
+        <div id="content">
+            <h2>
+                <x:string id="page_toasts" />
+            </h2>
+            <x:string id="toasts" />
+            <h3>
+                <x:string id="snooze_button" />
+            </h3>
+            <p>
+                <x:string id="snooze_button_desc" />
+            </p>
+        </div>
+    </body>
+</html>

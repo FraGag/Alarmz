@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Alarmz::AddEditAlarmDialog</class>
+ <widget class="QDialog" name="Alarmz::AddEditAlarmDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add/Edit Alarm...</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="messageLabel">
+     <property name="text">
+      <string>&amp;Message:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="buddy">
+      <cstring>messagePlainTextEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPlainTextEdit" name="messagePlainTextEdit">
+     <property name="whatsThis">
+      <string>Message displayed in the alarm.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="dateTimeLabel">
+     <property name="text">
+      <string>&amp;Date and time:</string>
+     </property>
+     <property name="buddy">
+      <cstring>dateTimeEdit</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QDateTimeEdit" name="dateTimeEdit">
+     <property name="whatsThis">
+      <string>Date and time at which the alarm will be displayed. When a frequency is set, the date will be changed automatically.</string>
+     </property>
+     <property name="frame">
+      <bool>true</bool>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="frequencyLabel">
+     <property name="text">
+      <string>&amp;Frequency:</string>
+     </property>
+     <property name="buddy">
+      <cstring>frequencyComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="frequencyComboBox">
+     <property name="whatsThis">
+      <string>Frequency at which the alarm will be repeated.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="displayMethodLabel">
+     <property name="text">
+      <string>D&amp;isplay method:</string>
+     </property>
+     <property name="buddy">
+      <cstring>displayMethodComboBox</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QComboBox" name="displayMethodComboBox">
+     <property name="whatsThis">
+      <string>Method by which the alarm will be displayed.</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>messagePlainTextEdit</tabstop>
+  <tabstop>dateTimeEdit</tabstop>
+  <tabstop>frequencyComboBox</tabstop>
+  <tabstop>displayMethodComboBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Alarmz::AddEditAlarmDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Alarmz::AddEditAlarmDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

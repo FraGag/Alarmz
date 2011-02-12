@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="help.xsl" type="text/xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="urn:x">
+    <head>
+        <title>Alarmz</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="toc"></div>
+        <div id="content">
+            <h1>Alarmz</h1>
+            <p>
+                <x:string id="intro" />
+            </p>
+            <p>
+                <x:string id="tray" />
+            </p>
+        </div>
+    </body>
+</html>

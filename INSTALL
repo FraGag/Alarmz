@@ -1,0 +1,36 @@
+﻿To build Alarmz, use qmake or Qt Creator. Use qmake CONFIG+=release for a
+release build.
+
+To generate the help files in HTML format from the source XML files, run
+doc/generate-html.py. This script requires the lxml library
+(http://codespeak.net/lxml/installation.html).
+
+To install Alarmz on Windows, an NSIS install script is provided in the nsi/
+subdirectory. Copy the following files in the nsi/ subdirectory before compiling
+the installer:
+- Alarmz.exe
+- QtCore4.dll
+- QtGui4.dll
+- QtXml4.dll
+- Alarmz_fr.qm
+- qt_fr.qm
+- doc/style.css
+- doc/en_US/addedit.html
+- doc/en_US/alarms.html
+- doc/en_US/index.html
+- doc/en_US/license.html
+- doc/en_US/menus.html
+- doc/en_US/options.html
+- doc/en_US/toasts.html
+- doc/fr/addedit.html
+- doc/fr/alarms.html
+- doc/fr/index.html
+- doc/fr/license.html
+- doc/fr/menus.html
+- doc/fr/options.html
+- doc/fr/toasts.html
+
+If you are using Qt based on MinGW, you must also copy the following files from
+the bin/ subdirectory of your MinGW installation:
+- libgcc_s_dw2-1.dll
+- mingwm10.dll

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet href="help.xsl" type="text/xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="urn:x">
+    <head>
+        <title>
+            Alarmz - <x:string id="page_addedit" />
+        </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="toc"></div>
+        <div id="content">
+            <h2>
+                <x:string id="page_addedit" />
+            </h2>
+            <p>
+                <x:string id="addedit_intro" />
+            </p>
+            <dl>
+                <dt>
+                    <x:string id="addedit_message" />
+                </dt>
+                <dd>
+                    <x:string id="addedit_message_desc" />
+                </dd>
+                <dt>
+                    <x:string id="addedit_datetime" />
+                </dt>
+                <dd>
+                    <x:string id="addedit_datetime_desc" />
+                </dd>
+                <dt>
+                    <x:string id="addedit_frequency" />
+                </dt>
+                <dd>
+                    <x:string id="addedit_frequency_desc" />
+                    <ul>
+                        <li>
+                            <x:string id="addedit_frequency_none" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_frequency_daily" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_frequency_weekly" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_frequency_monthly" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_frequency_yearly" />
+                        </li>
+                    </ul>
+                </dd>
+                <dt>
+                    <x:string id="addedit_display" />
+                </dt>
+                <dd>
+                    <x:string id="addedit_display_desc" />
+                    <ul>
+                        <li>
+                            <x:string id="addedit_display_msgbox_noicon" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_display_msgbox_error" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_display_msgbox_question" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_display_msgbox_exclamation" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_display_msgbox_information" />
+                        </li>
+                        <li>
+                            <x:string id="addedit_display_toast" />
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </body>
+</html>

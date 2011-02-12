@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings xmlns="urn:x" xmlns:html="http://www.w3.org/1999/xhtml">
+    <string id="toc">Sommaire</string>
+    <string id="page_intro">Introduction</string>
+    <string id="page_menus">Menus</string>
+    <string id="page_alarms">Comment fonctionnent les alarmes?</string>
+    <string id="page_addedit">Ajouter/modifier une alarme</string>
+    <string id="page_toasts">Que sont les toasts?</string>
+    <string id="page_options">Options</string>
+    <string id="page_license">Licence</string>
+    <string id="intro">
+        Alarmz affiche des alarmes aux heures et dates que vous spécifiez avec un texte personnalisé. Parcourez ces fichiers
+        d'aide pour découvrir ce que vous pouvez faire avec Alarmz.
+    </string>
+    <string id="tray">
+        Quand vous fermez la fenêtre principale d'Alarmz, le programme est toujours en cours d'exécution. Une icône s'affiche
+        dans la zone de notification (habituellement près de l'horloge). Double-cliquez dessus pour réafficher la fenêtre
+        principale ou faites un clic droit pour plus de choix. Voyez la description des options du menu contextuel dans la
+        rubrique <html:a href="menus">Menus</html:a>.
+    </string>
+    <string id="menus_intro">
+        Voici une description des menus d'Alarmz.
+    </string>
+    <string id="menu_file">
+        <html:span class="accesskey">F</html:span>ichier
+    </string>
+    <string id="menu_file_new">
+        <html:span class="accesskey">N</html:span>ouveau
+    </string>
+    <string id="menu_file_new_shortcut">Ctrl+N</string>
+    <string id="menu_file_new_desc">
+        Ferme le fichier ouvert (après confirmation d'enregistrement) et crée un nouveau fichier.
+    </string>
+    <string id="menu_file_open">
+        <html:span class="accesskey">O</html:span>uvrir...
+    </string>
+    <string id="menu_file_open_shortcut">Ctrl+O</string>
+    <string id="menu_file_open_desc">Ouvre un fichier d'alarmes existant.</string>
+    <string id="menu_file_save">
+        <html:span class="accesskey">E</html:span>nregistrer
+    </string>
+    <string id="menu_file_save_shortcut">Ctrl+S</string>
+    <string id="menu_file_save_desc">
+        Enregistre le fichier d'alarmes sous son nom actuel. Si le fichier n'a pas encore été enregistré, la commande
+        <html:strong>Enregistrer sous...</html:strong> est exécutée.
+    </string>
+    <string id="menu_file_saveas">
+        Enregistrer <html:span class="accesskey">s</html:span>ous...
+    </string>
+    <string id="menu_file_saveas_shortcut">F12</string>
+    <string id="menu_file_saveas_desc">Enregistre le fichier d'alarmes sous un nouveau nom.</string>
+    <string id="menu_file_options">
+        O<html:span class="accesskey">p</html:span>tions...
+    </string>
+    <string id="menu_file_options_desc">
+        Ouvre la fenêtre <html:a href="options">Options</html:a>.
+    </string>
+    <string id="menu_file_close">
+        <html:span class="accesskey">F</html:span>ermer la fenêtre
+    </string>
+    <string id="menu_file_close_shortcut">Ctrl+W</string>
+    <string id="menu_file_close_desc">Ferme la fenêtre mais continue d'envoyer les alarmes.</string>
+    <string id="menu_file_exit">
+        <html:span class="accesskey">Q</html:span>uitter
+    </string>
+    <string id="menu_file_exit_shortcut">Ctrl+Q</string>
+    <string id="menu_file_exit_desc">Quitte Alarmz. Vous ne recevrez plus d'alarmes.</string>
+    <string id="menu_alarms">
+        <html:span class="accesskey">A</html:span>larmes
+    </string>
+    <string id="menu_alarms_add">
+        <html:span class="accesskey">A</html:span>jouter...
+    </string>
+    <string id="menu_alarms_add_shortcut">Ctrl+A</string>
+    <string id="menu_alarms_add_desc">Ajoute une nouvelle alarme.</string>
+    <string id="menu_alarms_duplicate">
+        <html:span class="accesskey">D</html:span>upliquer
+    </string>
+    <string id="menu_alarms_duplicate_shortcut">Ctrl+D</string>
+    <string id="menu_alarms_duplicate_desc">Crée une copie exacte de l'alarme sélectionnée.</string>
+    <string id="menu_alarms_edit">
+        <html:span class="accesskey">M</html:span>odifier...
+    </string>
+    <string id="menu_alarms_edit_shortcut">Ctrl+E</string>
+    <string id="menu_alarms_edit_desc">Modifie l'alarme sélectionnée.</string>
+    <string id="menu_alarms_delete">
+        <html:span class="accesskey">S</html:span>upprimer
+    </string>
+    <string id="menu_alarms_delete_shortcut">Suppr</string>
+    <string id="menu_alarms_delete_desc">Supprime l'alarme sélectionnée.</string>
+    <string id="menu_alarms_enable">
+        A<html:span class="accesskey">c</html:span>tiver
+    </string>
+    <string id="menu_alarms_enable_desc">Lorsque cette option de menu est cochée, des alarmes seront envoyées aux heures demandées.</string>
+    <string id="menu_help">
+        <html:span class="accesskey">?</html:span>
+    </string>
+    <string id="menu_help_contents">
+        <html:span class="accesskey">R</html:span>ubriques d'aide...
+    </string>
+    <string id="menu_help_contents_shortcut">F1</string>
+    <string id="menu_help_contents_desc">Affiche ce fichier d'aide.</string>
+    <string id="menu_help_about">
+        À <html:span class="accesskey">p</html:span>ropos de...
+    </string>
+    <string id="menu_help_about_shortcut">Ctrl+F1</string>
+    <string id="menu_help_about_desc">Affiche les informations sur le programme.</string>
+    <string id="menu_context">Menu contextuel de l'icône de la zone de notification</string>
+    <string id="menu_context_open">
+        <html:span class="accesskey">O</html:span>uvrir un fichier...
+    </string>
+    <string id="menu_context_open_desc">
+        Voir <html:a href="#menu_file_open">Fichier/Ouvrir</html:a>.
+    </string>
+    <string id="menu_context_save">
+        <html:span class="accesskey">E</html:span>nregistrer le fichier
+    </string>
+    <string id="menu_context_save_desc">
+        Voir <html:a href="#menu_file_save">Fichier/Enregistrer</html:a>.
+    </string>
+    <string id="menu_context_show">
+        <html:span class="accesskey">A</html:span>fficher la fenêtre
+    </string>
+    <string id="menu_context_show_desc">
+        Affiche la fenêtre masquée par <html:a href="#menu_file_close">Fichier/Fermer la fenêtre</html:a> ou le menu système.
+    </string>
+    <string id="menu_context_exit">
+        <string id="menu_file_exit"/>
+    </string>
+    <string id="menu_context_exit_desc">
+        Voir <html:a href="#menu_file_exit">Fichier/Quitter</html:a>.
+    </string>
+    <string id="how_do_alarms_work">
+        Pour que vous voyiez des alarmes, il doit y avoir au moins une alarme dans la liste. Quand l'heure et la date du système
+        sont plus "tard" que l'heure et la date d'une alarme, cette alarme s'affiche. Si sa fréquence est
+        <html:strong>Aucune</html:strong>, l'alarme est supprimée automatiquement de la liste. Sinon, la date se fait ajouter la
+        durée correspondant à la fréquence. Dès qu'une alarme est affichée, le fichier d'alarmes est modifié et vous devez
+        l'enregistrer, sinon les alarmes réapparaitront quand vous réouvrirez le fichier. Il existe une option pour enregistrer
+        automatiquement le fichier d'alarmes lorsque vous le fermez ou lorsque vous quittez Alarmz.
+    </string>
+    <string id="addedit_intro">Cette fenêtre présente les 4 paramètres pour une alarme.</string>
+    <string id="addedit_message">
+        <html:span class="accesskey">M</html:span>essage
+    </string>
+    <string id="addedit_message_desc">
+        Tapez le message à afficher dans la boîte de message ou le toast, selon l'option choisie dans la zone Méthode
+        d'affichage. Vous pouvez utiliser certaines balises HTML dans le message.
+    </string>
+    <string id="addedit_datetime">
+        <html:span class="accesskey">D</html:span>ate et heure
+    </string>
+    <string id="addedit_datetime_desc">
+        Saisissez la date et l'heure où l'alarme devra être affichée. Cette valeur sera mise à jour à chaque fois que l'alarme
+        apparaîtra (à moins que la fréquence soit <html:strong>Aucune</html:strong>; l'alarme sera alors simplement supprimée).
+    </string>
+    <string id="addedit_frequency">
+        <html:span class="accesskey">F</html:span>réquence
+    </string>
+    <string id="addedit_frequency_desc">Choisissez la fréquence à laquelle l'alarme apparaîtra.</string>
+    <string id="addedit_frequency_none">
+        <html:strong>Aucune&#160;:</html:strong> L'alarme s'affichera une fois à la date et l'heure indiquées et sera supprimée
+        de la liste.
+    </string>
+    <string id="addedit_frequency_daily">
+        <html:strong>Quotidienne&#160;:</html:strong> L'alarme sera affichée tous les jours à la même heure, à partir de la date
+        spécifiée.
+    </string>
+    <string id="addedit_frequency_weekly">
+        <html:strong>Hebdomaraire&#160;:</html:strong> L'alarme sera affichée tous les 7 jours à la même heure, à partir de la
+        date spécifiée.
+    </string>
+    <string id="addedit_frequency_monthly">
+        <html:strong>Mensuelle&#160;:</html:strong> L'alarme sera affichée tous les mois au même jour et à la même heure, à
+        partir de la date spécifiée.
+    </string>
+    <string id="addedit_frequency_yearly">
+        <html:strong>Annuelle&#160;:</html:strong> L'alarme sera affichée tous les ans au même mois, au même jour et à la même
+        heure, à partir de la date spécifiée.
+    </string>
+    <string id="addedit_display">
+        Méthode d'<html:span class="accesskey">a</html:span>ffichage
+    </string>
+    <string id="addedit_display_desc">Choisissez le mode d'affichage de l'alarme.</string>
+    <string id="addedit_display_msgbox_noicon">
+        <html:strong>Boîte de message - Sans icône&#160;:</html:strong> Affiche une boîte de message sans icône.
+    </string>
+    <string id="addedit_display_msgbox_error">
+        <html:strong>Boîte de message - Erreur&#160;:</html:strong> Affiche une boîte de message avec l'icône
+        «&#160;erreur&#160;».
+    </string>
+    <string id="addedit_display_msgbox_question">
+        <html:strong>Boîte de message - Question&#160;:</html:strong> Affiche une boîte de message avec l'icône
+        «&#160;question&#160;».
+    </string>
+    <string id="addedit_display_msgbox_exclamation">
+        <html:strong>Boîte de message - Exclamation&#160;:</html:strong> Affiche une boîte de message avec l'icône
+        «&#160;exclamation&#160;».
+    </string>
+    <string id="addedit_display_msgbox_information">
+        <html:strong>Boîte de message - Information&#160;:</html:strong> Affiche une boîte de message avec l'icône
+        «&#160;information&#160;».
+    </string>
+    <string id="addedit_display_toast">
+        <html:strong>Toast&#160;:</html:strong> Affiche un <html:a href="toasts">toast</html:a>. Les toasts ont l'avantage
+        d'avoir un bouton Snooze et de ne pas bloquer l'application.
+    </string>
+    <string id="toasts">
+        <html:p>
+            Les toasts sont des petites fenêtres qui apparaissent sur un bord de l'écran. Alarmz vous permet de les
+            personnaliser dans la fenêtre <html:a href="options">Options</html:a>.
+        </html:p>
+        <html:p>
+            Dans Alarmz, les toasts s'empilent horizontalement (de gauche à droite ou de droite à gauche) ou verticalement (de
+            haut en bas ou de bas en haut). Vous pouvez spécifier dans quel coin du moniteur principal apparaîtra le premier
+            toast; le coin spécifiera dans quelle sens les toasts s'empileront. De plus, le sens du dégradé (s'il est activé)
+            change selon la direction choisie dans les options.
+        </html:p>
+        <html:p>Quand un toast est affiché, un son peut être joué (voir les options).</html:p>
+        <html:p>
+            Quand plusieurs toasts sont affichés en même temps, il s'empilent en s'éloignant du coin spécifié dans les options
+            et s'en rapprochent quand un toast avant eux est fermé. Donc, pour fermer tous les toasts ouverts, vous pouvez
+            cliquer sur le bouton Fermer du premier toast le et continuer de cliquer jusqu'à ce qu'il n'y ait plus de toasts.
+        </html:p>
+        <html:p>
+            Les toasts ont aussi l'avantage de ne pas bloquer l'application. Vous pouvez donc continuer à gérer vos alarmes
+            pendant qu'un toast est visible.
+        </html:p>
+    </string>
+    <string id="snooze_button">
+        Le bouton Snooze
+    </string>
+    <string id="snooze_button_desc">
+        Le bouton Snooze n'apparaît pas dans les boîtes de message. Ce bouton vous permet de masquer l'alarme pour la
+        réafficher plus tard (un peu comme certains réveille-matin qui éteignent l'alarme pour la faire sonner plus tard). Vous
+        pouvez choisir la durée du "snooze" (c'est-à-dire le temps qui s'écoulera avant que le toast ne réapparaisse) dans les
+        options.
+    </string>
+    <string id="options">
+        La fenêtre Options vous donne la possibilité de configurer Alarmz. Vous pouvez utiliser la fonctionnalité
+        <html:q>Qu'est-ce que c'est&#160;?</html:q> du système pour obtenir une explication brève de chaque option.
+    </string>
+    <string id="option_language">
+        <html:span class="accesskey">L</html:span>angue
+    </string>
+    <string id="option_language_desc">Choisissez la langue de l'interface utilisateur d'Alarmz.</string>
+    <string id="option_autosave">
+        Enre<html:span class="accesskey">g</html:span>istrement automatique
+    </string>
+    <string id="option_autosave_desc">
+        Lorsque cette option est cochée, les fichiers d'alarmes sont automatiquement enregistrés quand un autre fichier est
+        ouvert ou lorsque l'application est quittée.
+    </string>
+    <string id="option_startup">Démarrage</string>
+    <string id="option_startup_desc">Cette section propose des options concernant le démarrage automatique d'Alarmz.</string>
+    <string id="option_startup_runonsessionstartup">
+        Exécuter au démarrage de la <html:span class="accesskey">s</html:span>ession
+    </string>
+    <string id="option_startup_runonsessionstartup_desc">
+        Cochez ceci pour exécuter Alarmz lorsque vous vous connectez à votre ordinateur. Alarmz s'exécutera en arrière-plan.
+        Présentement, cette option n'est disponible que sur Windows.
+    </string>
+    <string id="option_startup_openthisfileonstartup">
+        <html:span class="accesskey">O</html:span>uvrir ce fichier au démarrage
+    </string>
+    <string id="option_startup_openthisfileonstartup_desc">
+        Cochez ceci pour ouvrir le fichier spécifié lorsque Alarmz est exécuté au démarrage de la session. Tapez le nom du
+        fichier d'alarmes à charger au démarrage de la session, ou cliquez sur le bouton <html:strong>...</html:strong> pour
+        rechercher le fichier sur votre système de fichiers.
+    </string>
+    <string id="option_toasts">Toasts</string>
+    <string id="option_toasts_desc">
+        Cette section permet de personnaliser les <html:a href="toasts">toasts</html:a>.
+    </string>
+    <string id="option_toasts_colors">Couleurs</string>
+    <string id="option_toasts_colors_desc">
+        Vous pouvez modifier les couleurs utilisées dans les toasts. Cochez les cases correspondant aux couleurs que vous
+        souhaitez personnaliser, puis cliquez sur les boutons colorés pour choisir une couleur. Si une case n'est pas cochée, la
+        couleur du système est utilisée.
+    </string>
+    <string id="option_toasts_colors_background">Arrière-plan</string>
+    <string id="option_toasts_colors_background_desc">
+        Les couleurs dans cette colonne correspondent à la couleur d'arrière-plan principale. Cette couleur est utilisée pour
+        dessiner un arrière-plan uni dans les toasts et les boutons.
+    </string>
+    <string id="option_toasts_colors_gradient">Dégradé</string>
+    <string id="option_toasts_colors_gradient_desc">
+        Les couleurs dans cette colonne correspondent à la couleur d'arrière-plan secondaire. Lorsque les cases Arrière-plan et
+        Dégradé d'une même composante sont cochées, un arrière-plan en dégradé linéaire est dessiné.
+    </string>
+    <string id="option_toasts_colors_text">Texte</string>
+    <string id="option_toasts_colors_text_desc">
+        Les couleurs dans cette colonne correspondent à la couleur du texte.
+    </string>
+    <string id="option_toasts_colors_toasts">Toasts</string>
+    <string id="option_toasts_colors_toasts_desc">Les couleurs sur cette ligne s'applique au toast et au message.</string>
+    <string id="option_toasts_colors_snoozebutton">Bouton Snooze</string>
+    <string id="option_toasts_colors_snoozebutton_desc">Les couleurs sur cette ligne s'applique au bouton Snooze.</string>
+    <string id="option_toasts_colors_closebutton">Bouton Fermer</string>
+    <string id="option_toasts_colors_closebutton_desc">Les couleurs sur cette ligne s'applique au bouton Fermer.</string>
+    <string id="option_toasts_usenativeborder">
+        Utiliser les bordures <html:span class="accesskey">n</html:span>atives
+    </string>
+    <string id="option_toasts_usenativeborder_desc">
+        Lorsque coché, utilise la bordure de cadre native du système de fenêtres. Lorsque décoché, retire le cadre natif du
+        système de fenêtres et dessine une bordure en relief.
+    </string>
+    <string id="option_toasts_corner">
+        <html:span class="accesskey">C</html:span>oin
+    </string>
+    <string id="option_toasts_corner_desc">
+        Choisissez dans quel coin le premier toast sera positionné. Les toasts sont toujours positionnés par rapport au
+        moniteur principal.
+    </string>
+    <string id="option_toasts_direction">Direction</string>
+    <string id="option_toasts_direction_desc">
+        Choisissez si les toasts doivent s'empiler à l'<html:span class="accesskey">h</html:span>orizontale ou à la
+        <html:span class="accesskey">v</html:span>erticale.
+    </string>
+    <string id="option_toasts_toastemergence">Apparition des toasts</string>
+    <string id="option_toasts_toastemergence_desc">Choisissez comment les toasts apparaîtront.</string>
+    <string id="option_toasts_toastemergence_sudden">Brusque</string>
+    <string id="option_toasts_toastemergence_sudden_desc">Les toasts apparaîtront sans animation.</string>
+    <string id="option_toasts_toastemergence_roll">Rouler</string>
+    <string id="option_toasts_toastemergence_roll_desc">
+        Les toasts apparaîtront à leur taille minimale et s'agrandiront horizontalement ou verticalement, selon l'option
+        Direction.
+    </string>
+    <string id="option_toasts_toastemergence_fade">Fondu</string>
+    <string id="option_toasts_toastemergence_fade_desc">
+        Les toasts apparaîtront avec un effet de fondu: ils commenceront complètement transparents et finiront complètement
+        opaques.
+    </string>
+    <string id="option_toasts_playsound">
+        <html:span class="accesskey">S</html:span>on à jouer
+    </string>
+    <string id="option_toasts_playsound_desc">
+        Cochez cette case pour jouer un son lorsqu'un toast apparaît. Tapez le nom du son à jouer, ou cliquez sur le bouton
+        <html:strong>...</html:strong> pour rechercher le fichier sur votre système de fichiers. Le son doit être dans un format
+        supporté par le système d'exploitation. <html:a href="http://doc.qt.nokia.com/4.6/qsound.html#details">Voyez la
+        documentation de Qt pour avoir la liste des formats supportés.</html:a>
+    </string>
+    <string id="option_toasts_snoozeduration">
+        <html:span class="accesskey">D</html:span>urée du snooze
+    </string>
+    <string id="option_toasts_snoozeduration_desc">
+        La durée en minutes avant qu'un toast ne réapparaisse à compter du moment où le bouton Snooze a été cliqué.
+    </string>
+    <string id="license_intro">
+        Alarmz est distribué sous la licence GNU General Public License, version 3 ou, à votre choix, n'importe quelle version
+        ultérieure. Le texte de la version 3 est inclus ci-dessous.
+    </string>
+</strings>

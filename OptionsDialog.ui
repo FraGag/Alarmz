@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Alarmz::OptionsDialog</class>
+ <widget class="QDialog" name="Alarmz::OptionsDialog">
+  <property name="sizeIncrement">
+   <size>
+    <width>8</width>
+    <height>8</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Options</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout">
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QLabel" name="languageLabel">
+       <property name="text">
+        <string>&amp;Language:</string>
+       </property>
+       <property name="buddy">
+        <cstring>languageComboBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="languageComboBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="whatsThis">
+        <string>Lets you choose the language of Alarmz's user interface.</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="autoSaveCheckBox">
+     <property name="whatsThis">
+      <string>When checked, alarms files are automatically saved when another file is opened or when the application exits.</string>
+     </property>
+     <property name="text">
+      <string>&amp;Auto save</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="startupGroupBox">
+     <property name="title">
+      <string>Startup</string>
+     </property>
+     <layout class="QGridLayout">
+      <item row="0" column="0" colspan="4">
+       <widget class="QCheckBox" name="runOnSessionStartupCheckBox">
+        <property name="whatsThis">
+         <string>Check this to run Alarmz when you log in to your computer.</string>
+        </property>
+        <property name="text">
+         <string>Run on &amp;session startup</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>13</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="1" colspan="3">
+       <widget class="QCheckBox" name="openThisFileOnStartupCheckBox">
+        <property name="whatsThis">
+         <string>Check this to open the specified file when Alarmz is run on session startup.</string>
+        </property>
+        <property name="text">
+         <string>&amp;Open this file on startup:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <spacer>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>28</width>
+          <height>13</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="openThisFileOnStartupLineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="whatsThis">
+         <string>Type the name of the alarms file to load on session startup, or click the &lt;b&gt;...&lt;/b&gt; button to browse for the file on your file system.</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QToolButton" name="browseForFileToOpenOnStartupButton">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="whatsThis">
+         <string>Browse for an alarms file on your file system to load on session startup.</string>
+        </property>
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="toastsGroupBox">
+     <property name="title">
+      <string>Toasts</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QGridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="colorsLabel">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Colors</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QLabel" name="backgroundLabel">
+          <property name="text">
+           <string>Background</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3" colspan="2">
+         <widget class="QLabel" name="gradientLabel">
+          <property name="text">
+           <string>Gradient</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5" colspan="2">
+         <widget class="QLabel" name="textLabel">
+          <property name="text">
+           <string>Text</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="7" rowspan="4">
+         <spacer>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="toastsLabel">
+          <property name="text">
+           <string>Toasts</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QCheckBox" name="toastBackgroundCheckBox">
+          <property name="whatsThis">
+           <string>When checked, draws either a solid background with the first background color or a linear gradient from the first background color to the second background color on every toast's background. When unchecked, the system's default background color is used.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QToolButton" name="toastBackgroundColor1Button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>First background color</string>
+          </property>
+          <property name="whatsThis">
+           <string>First background color for toasts.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QCheckBox" name="gradientOnToastBackgroundCheckBox">
+          <property name="whatsThis">
+           <string>When checked, draws a linear gradient from the first background color to the second background color on every toast's background. When unchecked, draws a solid background with the first background color on every toast.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QToolButton" name="toastBackgroundColor2Button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Second background color</string>
+          </property>
+          <property name="whatsThis">
+           <string>Second background color for toasts.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QCheckBox" name="toastTextCheckBox">
+          <property name="whatsThis">
+           <string>When checked, uses the specified text color for the message in toasts. When unchecked, the system's default text color is used.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="6">
+         <widget class="QToolButton" name="toastTextColorButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Text color</string>
+          </property>
+          <property name="whatsThis">
+           <string>Color of the message in toasts.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="snoozeLabel">
+          <property name="text">
+           <string>Snooze button</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QCheckBox" name="snoozeButtonBackgroundCheckBox">
+          <property name="whatsThis">
+           <string>When checked, draws either a solid background with the first background color or a linear gradient from the first background color to the second background color on Snooze buttons. When unchecked, the system's theme or default background color is used.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QToolButton" name="snoozeButtonBackgroundColor1Button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>First background color</string>
+          </property>
+          <property name="whatsThis">
+           <string>First background color for the Snooze button.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QCheckBox" name="gradientOnSnoozeButtonCheckBox">
+          <property name="whatsThis">
+           <string>When checked, draws a linear gradient from the first background color to the second background color on Snooze buttons. When unchecked, draws a solid background with the first background color on Snooze buttons.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QToolButton" name="snoozeButtonBackgroundColor2Button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Second background color</string>
+          </property>
+          <property name="whatsThis">
+           <string>Second background color for the Snooze button.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="5">
+         <widget class="QCheckBox" name="snoozeButtonTextCheckBox">
+          <property name="whatsThis">
+           <string>When checked, uses the specified text color for Snooze buttons. When unchecked, the system's default text color is used.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="6">
+         <widget class="QToolButton" name="snoozeButtonTextColorButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Text color</string>
+          </property>
+          <property name="whatsThis">
+           <string>Text color for the Snooze button.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="closeLabel">
+          <property name="text">
+           <string>Close button</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QCheckBox" name="closeButtonBackgroundCheckBox">
+          <property name="whatsThis">
+           <string>When checked, draws either a solid background with the first background color or a linear gradient from the first background color to the second background color on Close buttons. When unchecked, the system's theme or default background color is used.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QToolButton" name="closeButtonBackgroundColor1Button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>First background color</string>
+          </property>
+          <property name="whatsThis">
+           <string>First background color for the Close button.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QCheckBox" name="gradientOnCloseButtonCheckBox">
+          <property name="whatsThis">
+           <string>When checked, draws a linear gradient from the first background color to the second background color on Close buttons. When unchecked, draws a solid background with the first background color on Close buttons.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QToolButton" name="closeButtonBackgroundColor2Button">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Second background color</string>
+          </property>
+          <property name="whatsThis">
+           <string>Second background color for the Close button.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="5">
+         <widget class="QCheckBox" name="closeButtonTextCheckBox">
+          <property name="whatsThis">
+           <string>When checked, uses the specified text color for Close buttons. When unchecked, the system's default text color is used.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="6">
+         <widget class="QToolButton" name="closeButtonTextColorButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Text color</string>
+          </property>
+          <property name="whatsThis">
+           <string>Text color for the Close button.</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="useNativeBorderCheckBox">
+        <property name="whatsThis">
+         <string>When checked, uses the native frame border from the windowing system. When unchecked, removes the native frame from the windowing system and draws an outset border.</string>
+        </property>
+        <property name="text">
+         <string>Use &amp;native border</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" native="true">
+        <layout class="QGridLayout">
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0" rowspan="2">
+          <widget class="QLabel" name="cornerLabel">
+           <property name="text">
+            <string>&amp;Corner:</string>
+           </property>
+           <property name="buddy">
+            <cstring>topLeftCornerRadioButton</cstring>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="topLeftCornerRadioButton">
+           <property name="toolTip">
+            <string>Top-left corner</string>
+           </property>
+           <property name="whatsThis">
+            <string>Position the first toast in the top-left corner.</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QRadioButton" name="topRightCornerRadioButton">
+           <property name="toolTip">
+            <string>Top-right corner</string>
+           </property>
+           <property name="whatsThis">
+            <string>Position the first toast in the top-right corner.</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3" rowspan="2">
+          <spacer>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>28</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="1">
+          <widget class="QRadioButton" name="bottomLeftCornerRadioButton">
+           <property name="toolTip">
+            <string>Bottom-left corner</string>
+           </property>
+           <property name="whatsThis">
+            <string>Position the first toast in the bottom-left corner.</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QRadioButton" name="bottomRightCornerRadioButton">
+           <property name="toolTip">
+            <string>Bottom-right corner</string>
+           </property>
+           <property name="whatsThis">
+            <string>Position the first toast in the bottom-right corner.</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" native="true">
+        <layout class="QHBoxLayout">
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="directionLabel">
+           <property name="text">
+            <string>Direction:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="horizontalDirectionRadioButton">
+           <property name="whatsThis">
+            <string>Stack toasts horizontally (left to right/right to left)</string>
+           </property>
+           <property name="text">
+            <string>&amp;Horizontal</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="verticalDirectionRadioButton">
+           <property name="whatsThis">
+            <string>Stack toasts vertically (top-down/bottom-up)</string>
+           </property>
+           <property name="text">
+            <string>&amp;Vertical</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="toastEmergenceLabel">
+        <property name="text">
+         <string>Toast emergence:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" native="true">
+        <layout class="QHBoxLayout">
+         <property name="margin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QRadioButton" name="suddenToastEmergenceRadioButton">
+           <property name="whatsThis">
+            <string>Toasts appear without any animation.</string>
+           </property>
+           <property name="text">
+            <string>S&amp;udden</string>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="rollToastEmergenceRadioButton">
+           <property name="whatsThis">
+            <string>Toasts appear at minimum size and expand horizontally or vertically (depending on the direction set above).</string>
+           </property>
+           <property name="text">
+            <string>&amp;Roll</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="fadeToastEmergenceRadioButton">
+           <property name="whatsThis">
+            <string>Toasts fade in from completely transparent to completely opaque.</string>
+           </property>
+           <property name="text">
+            <string>&amp;Fade</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>84</width>
+             <height>16</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QCheckBox" name="playSoundCheckBox">
+          <property name="whatsThis">
+           <string>Check this to play a sound when a toast appears.</string>
+          </property>
+          <property name="text">
+           <string>&amp;Play sound:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="playSoundLineEdit">
+          <property name="whatsThis">
+           <string>Type the name of the sound to play when a toast appears, or click the &lt;b&gt;...&lt;/b&gt; button to browse for the file on your file system.</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="browseForSoundToPlayButton">
+          <property name="whatsThis">
+           <string>Browse for a sound file on your file system to play when a toast appears.</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout">
+        <item>
+         <widget class="QLabel" name="snoozeDurationLabel">
+          <property name="text">
+           <string>Snooze &amp;duration:</string>
+          </property>
+          <property name="buddy">
+           <cstring>snoozeDurationSpinBox</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="snoozeDurationSpinBox">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="whatsThis">
+           <string>The number of minutes before which a toast reappears since the moment the Snooze button was clicked.</string>
+          </property>
+          <property name="maximum">
+           <number>1440</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="minutesLabel">
+          <property name="text">
+           <string>minutes</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>languageComboBox</tabstop>
+  <tabstop>autoSaveCheckBox</tabstop>
+  <tabstop>runOnSessionStartupCheckBox</tabstop>
+  <tabstop>openThisFileOnStartupCheckBox</tabstop>
+  <tabstop>openThisFileOnStartupLineEdit</tabstop>
+  <tabstop>browseForFileToOpenOnStartupButton</tabstop>
+  <tabstop>toastBackgroundCheckBox</tabstop>
+  <tabstop>toastBackgroundColor1Button</tabstop>
+  <tabstop>gradientOnToastBackgroundCheckBox</tabstop>
+  <tabstop>toastBackgroundColor2Button</tabstop>
+  <tabstop>toastTextCheckBox</tabstop>
+  <tabstop>toastTextColorButton</tabstop>
+  <tabstop>snoozeButtonBackgroundCheckBox</tabstop>
+  <tabstop>snoozeButtonBackgroundColor1Button</tabstop>
+  <tabstop>gradientOnSnoozeButtonCheckBox</tabstop>
+  <tabstop>snoozeButtonBackgroundColor2Button</tabstop>
+  <tabstop>snoozeButtonTextCheckBox</tabstop>
+  <tabstop>snoozeButtonTextColorButton</tabstop>
+  <tabstop>closeButtonBackgroundCheckBox</tabstop>
+  <tabstop>closeButtonBackgroundColor1Button</tabstop>
+  <tabstop>gradientOnCloseButtonCheckBox</tabstop>
+  <tabstop>closeButtonBackgroundColor2Button</tabstop>
+  <tabstop>closeButtonTextCheckBox</tabstop>
+  <tabstop>closeButtonTextColorButton</tabstop>
+  <tabstop>useNativeBorderCheckBox</tabstop>
+  <tabstop>topLeftCornerRadioButton</tabstop>
+  <tabstop>topRightCornerRadioButton</tabstop>
+  <tabstop>bottomLeftCornerRadioButton</tabstop>
+  <tabstop>bottomRightCornerRadioButton</tabstop>
+  <tabstop>horizontalDirectionRadioButton</tabstop>
+  <tabstop>verticalDirectionRadioButton</tabstop>
+  <tabstop>suddenToastEmergenceRadioButton</tabstop>
+  <tabstop>rollToastEmergenceRadioButton</tabstop>
+  <tabstop>fadeToastEmergenceRadioButton</tabstop>
+  <tabstop>playSoundCheckBox</tabstop>
+  <tabstop>playSoundLineEdit</tabstop>
+  <tabstop>browseForSoundToPlayButton</tabstop>
+  <tabstop>snoozeDurationSpinBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Alarmz::OptionsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>275</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Alarmz::OptionsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>516</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gradientOnToastBackgroundCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>toastBackgroundColor2Button</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gradientOnSnoozeButtonCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>snoozeButtonBackgroundColor2Button</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>252</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openThisFileOnStartupCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>openThisFileOnStartupLineEdit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>148</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openThisFileOnStartupCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>browseForFileToOpenOnStartupButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>316</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>gradientOnCloseButtonCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>closeButtonBackgroundColor2Button</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>285</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toastBackgroundCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>toastBackgroundColor1Button</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>105</x>
+     <y>219</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>138</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>snoozeButtonBackgroundCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>snoozeButtonBackgroundColor1Button</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>247</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closeButtonBackgroundCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>closeButtonBackgroundColor1Button</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>142</x>
+     <y>276</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toastTextCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>toastTextColorButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>233</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>snoozeButtonTextCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>snoozeButtonTextColorButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>213</x>
+     <y>248</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>231</x>
+     <y>247</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closeButtonTextCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>closeButtonTextColorButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>214</x>
+     <y>272</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>236</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

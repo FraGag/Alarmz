@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<toc>
+    <entry id="intro" href="index" />
+    <entry id="menus" href="menus" />
+    <entry id="alarms" href="alarms" />
+    <entry id="addedit" href="addedit" />
+    <entry id="toasts" href="toasts" />
+    <entry id="options" href="options" />
+    <entry id="license" href="license" />
+</toc>

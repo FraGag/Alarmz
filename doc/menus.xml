@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="help.xsl" type="text/xsl"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:x="urn:x">
+    <head>
+        <title>
+            Alarmz - <x:string id="page_menus" />
+        </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="toc"></div>
+        <div id="content">
+            <h2>
+                <x:string id="page_menus" />
+            </h2>
+            <p>
+                <x:string id="menus_intro" />
+            </p>
+            <x:menu id="file">
+                <x:menuitem id="new" shortcut="1" />
+                <x:menuitem id="open" shortcut="1" />
+                <x:menuitem id="save" shortcut="1" />
+                <x:menuitem id="saveas" shortcut="1" />
+                <x:menuitem id="options" after-separator="1" />
+                <x:menuitem id="close" shortcut="1" after-separator="1" />
+                <x:menuitem id="exit" shortcut="1" />
+            </x:menu>
+            <x:menu id="alarms">
+                <x:menuitem id="add" shortcut="1" />
+                <x:menuitem id="duplicate" shortcut="1" />
+                <x:menuitem id="edit" shortcut="1" />
+                <x:menuitem id="delete" shortcut="1" />
+                <x:menuitem id="enable" after-separator="1" />
+            </x:menu>
+            <x:menu id="help">
+                <x:menuitem id="contents" shortcut="1" />
+                <x:menuitem id="about" shortcut="1" />
+            </x:menu>
+            <x:menu id="context">
+                <x:menuitem id="open" />
+                <x:menuitem id="save" />
+                <x:menuitem id="show" />
+                <x:menuitem id="exit" />
+            </x:menu>
+        </div>
+    </body>
+</html>
