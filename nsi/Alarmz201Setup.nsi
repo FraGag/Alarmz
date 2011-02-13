@@ -1,3 +1,5 @@
+SetCompressor /SOLID lzma
+
 ; If the execution level isn't set explicitly, shortcuts written to the user's
 ; start menu will actually be written to the common start menu, and the
 ; uninstaller will try to delete the shortcuts from the user's start menu,
@@ -5,7 +7,7 @@
 RequestExecutionLevel user
 
 !define PRODUCT_NAME "Alarmz"
-!define PRODUCT_VERSION "2.0"
+!define PRODUCT_VERSION "2.0.1"
 !define PRODUCT_PUBLISHER "Francis Gagné"
 !define PRODUCT_WEB_SITE "http://fragag.ifrance.com/"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\Alarmz.exe"
@@ -53,7 +55,7 @@ var ICONS_GROUP
 ; MUI end ------
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile "Alarmz200Setup.exe"
+OutFile "Alarmz201Setup.exe"
 InstallDir "$PROGRAMFILES\Alarmz"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show
@@ -96,6 +98,8 @@ admin_check_done:
   File "QtXml4.dll"
   File "Alarmz_fr.qm"
   File "qt_fr.qm"
+  SetOutPath "$INSTDIR\imageformats"
+  File "imageformats\qico4.dll"
   SetOutPath "$INSTDIR\doc"
   File /r "doc\*"
   

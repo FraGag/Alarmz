@@ -29,6 +29,7 @@ the installer:
 - doc/fr/menus.html
 - doc/fr/options.html
 - doc/fr/toasts.html
+- imageformats/qico4.dll (from plugins/imageformats/ of your Qt installation)
 
 If you are using Qt based on MinGW, you must also copy the following files from
 the bin/ subdirectory of your MinGW installation:
