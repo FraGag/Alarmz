@@ -76,6 +76,7 @@ public:
     QColor closeButtonBackgroundColor1() const;
     QColor closeButtonBackgroundColor2() const;
     QColor closeButtonTextColor() const;
+    bool autoSize() const;
     bool useNativeBorder() const;
     int corner() const;
     int direction() const;
@@ -105,6 +106,7 @@ public:
     void setCloseButtonBackgroundColor1(const QColor &value);
     void setCloseButtonBackgroundColor2(const QColor &value);
     void setCloseButtonTextColor(const QColor &value);
+    void setAutoSize(bool value);
     void setUseNativeBorder(bool value);
     void setCorner(int value);
     void setDirection(int value);

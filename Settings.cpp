@@ -364,6 +364,11 @@ QColor Settings::closeButtonTextColor() const
     return this->readColorSetting("Toasts_CloseTextColor", qRgb(0, 0, 0));
 }
 
+bool Settings::autoSize() const
+{
+    return this->readIntSetting("Toasts_AutoSize", 1) != 0;
+}
+
 bool Settings::useNativeBorder() const
 {
     return this->readIntSetting("Toasts_UseNativeBorder", 1) != 0;
@@ -526,6 +531,11 @@ void Settings::setCloseButtonBackgroundColor2(const QColor &value)
 void Settings::setCloseButtonTextColor(const QColor &value)
 {
     this->writeColorSetting("Toasts_CloseTextColor", value);
+}
+
+void Settings::setAutoSize(bool value)
+{
+    this->settings.setValue("Toasts_AutoSize", value ? 1 : 0);
 }
 
 void Settings::setUseNativeBorder(bool value)

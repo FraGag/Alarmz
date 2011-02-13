@@ -48,7 +48,6 @@ ToastWidget::ToastWidget(QWidget *parent) :
     this->connect(this->ui->snoozeButton, SIGNAL(clicked()), SLOT(snooze()));
     QDesktopWidget *dw = QApplication::desktop();
     this->connect(dw, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
-    this->setMaximumSize(this->size());
     this->loadSettings();
     this->connect(&Settings::instance(), SIGNAL(changed()), SLOT(loadSettings()));
 }
@@ -97,7 +96,7 @@ void ToastWidget::reposition()
     int end = visibleInstances.indexOf(this);
     int corner = settings.corner();
     if (settings.direction() == 0) {
-        // horizontal
+        // horizontal stacking
         int multiplier = corner & 1 ? -1 : 1;
         int x = corner & 1 ? rect.left() + rect.width() - this->frameSize().width() : 0;
 
@@ -107,7 +106,7 @@ void ToastWidget::reposition()
 
         this->move(x, corner & 2 ? rect.top() + rect.height() - this->frameSize().height() : 0);
     } else {
-        // vertical
+        // vertical stacking
         int multiplier = corner & 2 ? -1 : 1;
         int y = corner & 2 ? rect.top() + rect.height() - this->frameSize().height() : 0;
 
@@ -121,14 +120,17 @@ void ToastWidget::reposition()
 
 void ToastWidget::pop()
 {
+    this->ui->widget->adjustSize();
     switch (Settings::instance().toastEmergence()) {
     case 1:
-        this->setMinimumSize(MaxWidth, MaxHeight);
+        this->setMinimumSize(this->ui->widget->size());
+        this->setMaximumSize(this->ui->widget->size());
         break;
 
     case 3:
         this->setWindowOpacity(0.0);
-        this->setMinimumSize(MaxWidth, MaxHeight);
+        this->setMinimumSize(this->ui->widget->size());
+        this->setMaximumSize(this->ui->widget->size());
         this->fadeTimerId = this->startTimer(16);
         this->emergeStartTime = QDateTime::currentDateTime();
         break;
@@ -164,7 +166,7 @@ void ToastWidget::changeEvent(QEvent *e)
     this->QWidget::changeEvent(e);
     switch (e->type()) {
     case QEvent::LanguageChange:
-        ui->retranslateUi(this);
+        this->ui->retranslateUi(this);
         break;
 
     default:
@@ -181,7 +183,7 @@ void ToastWidget::closeEvent(QCloseEvent *e)
 
 void ToastWidget::paintEvent(QPaintEvent *e)
 {
-    Settings &settings = Settings::instance();
+    const Settings &settings = Settings::instance();
     int w = this->width(), h = this->height();
     QPainter painter(this);
 
@@ -243,15 +245,15 @@ void ToastWidget::timerEvent(QTimerEvent *e)
             this->rollTimerId = 0;
         }
 
-        int width = MaxWidth;
-        int height = MaxHeight;
+        QSize size(this->ui->widget->size());
         if (Settings::instance().direction() == 0) {
-            width = static_cast<int>(MaxWidth * seconds * 2);
+            size.setWidth(static_cast<int>(size.width() * seconds * 2));
         } else {
-            height = static_cast<int>(MaxHeight * seconds * 2);
+            size.setHeight(static_cast<int>(size.height() * seconds * 2));
         }
 
-        this->setMinimumSize(width, height);
+        this->setMinimumSize(size);
+        this->setMaximumSize(size);
         this->reposition();
     }
     else if (e->timerId() == this->fadeTimerId) {
@@ -299,13 +301,24 @@ void ToastWidget::on_messageLabel_linkActivated(QString link)
 
 void ToastWidget::loadSettings()
 {
-    Settings &settings = Settings::instance();
+    const Settings &settings = Settings::instance();
     bool visible = this->isVisible();
     this->setWindowFlags((settings.useNativeBorder() ? Qt::CustomizeWindowHint : Qt::FramelessWindowHint) | Qt::WindowStaysOnTopHint);
     if (visible) {
         this->show();
         this->reposition();
     }
+
+    QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+    if (settings.autoSize()) {
+        sizePolicy.setVerticalPolicy(QSizePolicy::Minimum);
+        this->ui->widget->setMinimumSize(MaxWidth, 0);
+    } else {
+        this->ui->widget->setMinimumSize(MaxWidth, MaxHeight);
+    }
+
+    this->ui->widget->setSizePolicy(sizePolicy);
+    this->ui->widget->adjustSize();
 
     if (settings.applyToastTextColor()) {
         this->ui->messageLabel->setStyleSheet("color:" + settings.toastTextColor().name());
