@@ -45,6 +45,10 @@ ToastWidget::ToastWidget(QWidget *parent) :
     fadeTimerId(0)
 {
     this->ui->setupUi(this);
+
+    // Don't exit Alarmz when a toast is closed while the main window is hidden
+    this->setAttribute(Qt::WA_QuitOnClose, false);
+
     this->connect(this->ui->snoozeButton, SIGNAL(clicked()), SLOT(snooze()));
     QDesktopWidget *dw = QApplication::desktop();
     this->connect(dw, SIGNAL(workAreaResized(int)), SLOT(onWorkAreaResized(int)));
