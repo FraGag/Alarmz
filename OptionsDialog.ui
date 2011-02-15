@@ -458,14 +458,41 @@
        </layout>
       </item>
       <item>
-       <widget class="QCheckBox" name="useNativeBorderCheckBox">
-        <property name="whatsThis">
-         <string>When checked, uses the native frame border from the windowing system. When unchecked, removes the native frame from the windowing system and draws an outset border.</string>
-        </property>
-        <property name="text">
-         <string>Use &amp;native border</string>
-        </property>
-       </widget>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QCheckBox" name="autoSizeCheckBox">
+          <property name="whatsThis">
+           <string>When checked, toasts will be resized to fit their contents.</string>
+          </property>
+          <property name="text">
+           <string>Au&amp;to size</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="useNativeBorderCheckBox">
+          <property name="whatsThis">
+           <string>When checked, uses the native frame border from the windowing system. When unchecked, removes the native frame from the windowing system and draws an outset border.</string>
+          </property>
+          <property name="text">
+           <string>Use &amp;native border</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>88</width>
+            <height>17</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
       </item>
       <item>
        <widget class="QWidget" native="true">

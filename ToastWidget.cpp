@@ -308,10 +308,6 @@ void ToastWidget::loadSettings()
     const Settings &settings = Settings::instance();
     bool visible = this->isVisible();
     this->setWindowFlags((settings.useNativeBorder() ? Qt::CustomizeWindowHint : Qt::FramelessWindowHint) | Qt::WindowStaysOnTopHint);
-    if (visible) {
-        this->show();
-        this->reposition();
-    }
 
     QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
     if (settings.autoSize()) {
@@ -323,6 +319,13 @@ void ToastWidget::loadSettings()
 
     this->ui->widget->setSizePolicy(sizePolicy);
     this->ui->widget->adjustSize();
+    this->setMinimumSize(this->ui->widget->size());
+    this->setMaximumSize(this->ui->widget->size());
+
+    if (visible) {
+        this->show();
+        this->reposition();
+    }
 
     if (settings.applyToastTextColor()) {
         this->ui->messageLabel->setStyleSheet("color:" + settings.toastTextColor().name());

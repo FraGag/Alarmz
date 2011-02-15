@@ -1,1 +1,3 @@
 glob:Alarmz.pro.user
+glob:doc/en_US/*.html
+glob:doc/fr/*.html

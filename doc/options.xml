@@ -33,6 +33,7 @@
                     <x:option id="snoozebutton" />
                     <x:option id="closebutton" />
                 </x:optiongroup>
+                <x:option id="autosize" />
                 <x:option id="usenativeborder" />
                 <x:option id="corner" />
                 <x:option id="direction" />

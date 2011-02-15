@@ -60,12 +60,12 @@
         <translation>Ferme la fenêtre sans ajouter l&apos;alarme au fichier actif.</translation>
     </message>
     <message>
-        <location filename="AddEditAlarmDialog.cpp" line="77"/>
+        <location filename="AddEditAlarmDialog.cpp" line="76"/>
         <source>Changes the properties of the alarm.</source>
         <translation>Modifie les propriétés de l&apos;alarme.</translation>
     </message>
     <message>
-        <location filename="AddEditAlarmDialog.cpp" line="78"/>
+        <location filename="AddEditAlarmDialog.cpp" line="77"/>
         <source>Closes the window without modifying the alarm.</source>
         <translation>Ferme la fenêtre sans modifier l&apos;alarme.</translation>
     </message>
@@ -136,22 +136,22 @@
 <context>
     <name>Alarmz::AlarmListModel</name>
     <message>
-        <location filename="AlarmListModel.cpp" line="90"/>
+        <location filename="AlarmListModel.cpp" line="82"/>
         <source>Message</source>
         <translation>Message</translation>
     </message>
     <message>
-        <location filename="AlarmListModel.cpp" line="91"/>
+        <location filename="AlarmListModel.cpp" line="83"/>
         <source>Scheduled date and time</source>
         <translation>Date et heure planifiées</translation>
     </message>
     <message>
-        <location filename="AlarmListModel.cpp" line="92"/>
+        <location filename="AlarmListModel.cpp" line="84"/>
         <source>Frequency</source>
         <translation>Fréquence</translation>
     </message>
     <message>
-        <location filename="AlarmListModel.cpp" line="93"/>
+        <location filename="AlarmListModel.cpp" line="85"/>
         <source>Display method</source>
         <translation>Méthode d&apos;affichage</translation>
     </message>
@@ -235,8 +235,8 @@
     </message>
     <message>
         <location filename="MainWindow.ui" line="168"/>
-        <location filename="MainWindow.cpp" line="62"/>
-        <location filename="MainWindow.cpp" line="219"/>
+        <location filename="MainWindow.cpp" line="65"/>
+        <location filename="MainWindow.cpp" line="210"/>
         <source>E&amp;xit</source>
         <translation>&amp;Quitter</translation>
     </message>
@@ -311,126 +311,126 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="39"/>
+        <location filename="MainWindow.cpp" line="41"/>
         <source>Alarmz files (*.alarmz);;All files (*.*)</source>
         <comment>Filter for open/save dialog</comment>
         <translation>Fichiers Alarmz (*.alarmz);;Tous les fichiers (*.*)</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="111"/>
+        <location filename="MainWindow.cpp" line="110"/>
         <source>An error occurred while trying to load file &lt;b&gt;%1&lt;/b&gt;.</source>
         <translation>Une erreur s&apos;est produite en essayant de charger le fichier &lt;b&gt;%1&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="115"/>
+        <location filename="MainWindow.cpp" line="114"/>
         <source>Error loading file</source>
         <comment>Title of message box displayed when an error occurred while trying to load a file</comment>
         <translation>Erreur de chargement de fichier</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="134"/>
+        <location filename="MainWindow.cpp" line="132"/>
         <source>%1&lt;br&gt;Line: %2&lt;br&gt;Column: %3</source>
         <translation>%1&lt;br&gt;Ligne: %2&lt;br&gt;Colonne: %3</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="141"/>
+        <location filename="MainWindow.cpp" line="138"/>
         <source>The XML document doesn&apos;t have the correct root element.</source>
         <translation>Le document XML n&apos;a pas le bon élément racine.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="163"/>
+        <location filename="MainWindow.cpp" line="156"/>
         <source>An unexpected XML element was encountered.</source>
         <translation>Un élément XML inattendu a été trouvé.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="167"/>
+        <location filename="MainWindow.cpp" line="160"/>
         <source>The format of the date and time of an alarm is invalid.</source>
         <oldsource>The date and time of an alarm is invalid.</oldsource>
         <translation>Le format de la date et de l&apos;heure d&apos;une alarme est invalide.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="171"/>
+        <location filename="MainWindow.cpp" line="164"/>
         <source>The frequency of an alarm is invalid.</source>
         <translation>La fréquence d&apos;une alarme est invalide.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="175"/>
+        <location filename="MainWindow.cpp" line="168"/>
         <source>The display method of an alarm is invalid.</source>
         <translation>La méthode d&apos;affichage d&apos;une alarme est invalide.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="185"/>
+        <location filename="MainWindow.cpp" line="177"/>
         <source>A text node in the &lt;alarmz&gt; element containing characters other than whitespace was encountered.</source>
         <translation>Un nœud de texte dans l&apos;élément &lt;alarmz&gt; contenant des caractères autres que des espaces blancs a été trouvé.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="192"/>
+        <location filename="MainWindow.cpp" line="184"/>
         <source>An unexpected XML node was found in the document.</source>
         <translation>Un nœud XML inattendu a été trouvé dans le document.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="332"/>
+        <location filename="MainWindow.cpp" line="313"/>
         <source>The alarms file was modified. Do you want to save the changes?</source>
         <translation>Le fichier d&apos;alarmes a été modifié. Voulez-vous enregistrer les modifications?</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="361"/>
+        <location filename="MainWindow.cpp" line="340"/>
         <source>Open...</source>
         <comment>Title for open file dialog</comment>
         <translation>Ouvrir...</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="409"/>
+        <location filename="MainWindow.cpp" line="384"/>
         <source>Save...</source>
         <comment>Title for save file dialog</comment>
         <translation>Enregistrer...</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="499"/>
+        <location filename="MainWindow.cpp" line="480"/>
         <source>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</source>
         <translation>Ce programme est un logiciel libre: vous pouvez le redistribuer et/ou le modifier sous les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la licence, soit (à votre choix) n&apos;importe quelle version ultérieure.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="500"/>
+        <location filename="MainWindow.cpp" line="481"/>
         <source>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</source>
         <translation>Ce programme est distribué dans l&apos;espoir qu&apos;il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D&apos;ADAPTATION À UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="501"/>
+        <location filename="MainWindow.cpp" line="482"/>
         <source>You should have received a copy of the GNU General Public License along with this program. If not, see &amp;lt;&lt;a href=&quot;http://www.gnu.org/licenses/&quot;&gt;http://www.gnu.org/licenses/&lt;/a&gt;&gt;.</source>
         <translation>Vous devriez avoir reçu une copie de la GNU General Public License avec ce programme. Sinon, voyez  &amp;lt;&lt;a href=&quot;http://www.gnu.org/licenses/&quot;&gt;http://www.gnu.org/licenses/&lt;/a&gt;&gt;.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="497"/>
+        <location filename="MainWindow.cpp" line="478"/>
         <source>The program&apos;s icon comes from the BeOS operating system.</source>
         <translation>L&apos;icône du programme provient du système d&apos;exploitation BeOS.</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="59"/>
-        <location filename="MainWindow.cpp" line="216"/>
+        <location filename="MainWindow.cpp" line="62"/>
+        <location filename="MainWindow.cpp" line="207"/>
         <source>&amp;Open File...</source>
         <translation>&amp;Ouvrir un fichier...</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="60"/>
-        <location filename="MainWindow.cpp" line="217"/>
+        <location filename="MainWindow.cpp" line="63"/>
+        <location filename="MainWindow.cpp" line="208"/>
         <source>&amp;Save File</source>
         <translation>&amp;Enregistrer le fichier</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="61"/>
-        <location filename="MainWindow.cpp" line="218"/>
+        <location filename="MainWindow.cpp" line="64"/>
+        <location filename="MainWindow.cpp" line="209"/>
         <source>S&amp;how Window</source>
         <translation>&amp;Afficher la fenêtre</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="496"/>
+        <location filename="MainWindow.cpp" line="477"/>
         <source>English translation: Francis Gagné</source>
         <comment>Translators, leave your name here!</comment>
         <translation>Traduction française: Francis Gagné</translation>
     </message>
     <message>
-        <location filename="MainWindow.cpp" line="498"/>
+        <location filename="MainWindow.cpp" line="479"/>
         <source>Icons in the menus and tool bars come from the Silk icon set.</source>
         <translation>Les icônes dans les menus et les barres d&apos;outils proviennent du jeu d&apos;icônes Silk.</translation>
     </message>
@@ -438,381 +438,391 @@
 <context>
     <name>Alarmz::OptionsDialog</name>
     <message>
-        <location filename="OptionsDialog.ui" line="12"/>
+        <location filename="OptionsDialog.ui" line="20"/>
         <source>Options</source>
         <translation>Options</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="23"/>
+        <location filename="OptionsDialog.ui" line="31"/>
         <source>&amp;Language:</source>
         <translation>&amp;Langue:</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="39"/>
+        <location filename="OptionsDialog.ui" line="47"/>
         <source>Lets you choose the language of Alarmz&apos;s user interface.</source>
         <translation>Choisissez la langue de l&apos;interface utilisateur d&apos;Alarmz.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="48"/>
+        <location filename="OptionsDialog.ui" line="56"/>
         <source>When checked, alarms files are automatically saved when another file is opened or when the application exits.</source>
         <translation>Lorsque coché, les fichiers d&apos;alarmes sont automatiquement enregistrés quand un autre fichier est ouvert ou lorsque l&apos;application est quittée.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="51"/>
+        <location filename="OptionsDialog.ui" line="59"/>
         <source>&amp;Auto save</source>
         <translation>Enre&amp;gistrement automatique</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="58"/>
+        <location filename="OptionsDialog.ui" line="66"/>
         <source>Startup</source>
         <translation>Démarrage</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="64"/>
+        <location filename="OptionsDialog.ui" line="72"/>
         <source>Check this to run Alarmz when you log in to your computer.</source>
         <translation>Cochez ceci pour exécuter Alarmz lorsque vous vous connectez à votre ordinateur.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="67"/>
+        <location filename="OptionsDialog.ui" line="75"/>
         <source>Run on &amp;session startup</source>
         <translation>Exécuter au démarrage de la &amp;session</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="119"/>
+        <location filename="OptionsDialog.ui" line="127"/>
         <source>Type the name of the alarms file to load on session startup, or click the &lt;b&gt;...&lt;/b&gt; button to browse for the file on your file system.</source>
         <translation>Tapez le nom du fichier d&apos;alarmes à charger au démarrage de la session, ou cliquez sur le bouton &lt;b&gt;...&lt;/b&gt; pour rechercher le fichier sur votre système de fichiers.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="129"/>
+        <location filename="OptionsDialog.ui" line="137"/>
         <source>Browse for an alarms file on your file system to load on session startup.</source>
         <translation>Recherchez un fichier d&apos;alarmes sur votre système de fichiers à charger au démarrage de la session.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="132"/>
-        <location filename="OptionsDialog.ui" line="699"/>
+        <location filename="OptionsDialog.ui" line="140"/>
+        <location filename="OptionsDialog.ui" line="734"/>
         <source>...</source>
         <translation>...</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="90"/>
+        <location filename="OptionsDialog.ui" line="98"/>
         <source>Check this to open the specified file when Alarmz is run on session startup.</source>
         <translation>Cochez ceci pour ouvrir le fichier spécifié lorsque Alarmz est exécuté au démarrage de la session.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="93"/>
+        <location filename="OptionsDialog.ui" line="101"/>
         <source>&amp;Open this file on startup:</source>
         <translation>&amp;Ouvrir ce fichier au démarrage:</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="142"/>
-        <location filename="OptionsDialog.ui" line="206"/>
+        <location filename="OptionsDialog.ui" line="150"/>
+        <location filename="OptionsDialog.ui" line="214"/>
         <source>Toasts</source>
         <translation>Toasts</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="239"/>
+        <location filename="OptionsDialog.ui" line="247"/>
         <source>When checked, draws a linear gradient from the first background color to the second background color on every toast&apos;s background. When unchecked, draws a solid background with the first background color on every toast.</source>
         <oldsource>When checked, draws a linear gradient from the first background color to the second background color on every toast&apos;s background. When unchecked, draws a solid background with the first background color on every toast&apos;s background.</oldsource>
         <translation>Lorsque coché, dessine un dégradé linéaire de la première couleur d&apos;arrière-plan à la deuxième couleur d&apos;arrière-plan sur l&apos;arrière-plan de chaque toast. Lorsque décoché, dessine un arrière-plan uni avec la première couleur d&apos;arrière-plan sur chaque toast.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="226"/>
-        <location filename="OptionsDialog.ui" line="311"/>
-        <location filename="OptionsDialog.ui" line="396"/>
+        <location filename="OptionsDialog.ui" line="234"/>
+        <location filename="OptionsDialog.ui" line="319"/>
+        <location filename="OptionsDialog.ui" line="404"/>
         <source>First background color</source>
         <oldsource>Gradient on toast &amp;background</oldsource>
         <translation>Première couleur d&apos;arrière-plan</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="229"/>
+        <location filename="OptionsDialog.ui" line="237"/>
         <source>First background color for toasts.</source>
         <oldsource>First background color for toast background.</oldsource>
         <translation>Première couleur d&apos;arrière-plan pour les toasts.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="252"/>
-        <location filename="OptionsDialog.ui" line="337"/>
-        <location filename="OptionsDialog.ui" line="422"/>
+        <location filename="OptionsDialog.ui" line="260"/>
+        <location filename="OptionsDialog.ui" line="345"/>
+        <location filename="OptionsDialog.ui" line="430"/>
         <source>Second background color</source>
         <translation>Deuxième couleur d&apos;arrière-plan</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="255"/>
+        <location filename="OptionsDialog.ui" line="263"/>
         <source>Second background color for toasts.</source>
         <oldsource>Second background color for toast background.</oldsource>
         <translation>Deuxième couleur d&apos;arrière-plan pour les toasts.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="278"/>
-        <location filename="OptionsDialog.ui" line="363"/>
-        <location filename="OptionsDialog.ui" line="448"/>
+        <location filename="OptionsDialog.ui" line="286"/>
+        <location filename="OptionsDialog.ui" line="371"/>
+        <location filename="OptionsDialog.ui" line="456"/>
         <source>Text color</source>
         <translation>Couleur du texte</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="281"/>
+        <location filename="OptionsDialog.ui" line="289"/>
         <source>Color of the message in toasts.</source>
         <translation>Couleur du message dans les toasts.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="324"/>
+        <location filename="OptionsDialog.ui" line="332"/>
         <source>When checked, draws a linear gradient from the first background color to the second background color on Snooze buttons. When unchecked, draws a solid background with the first background color on Snooze buttons.</source>
         <translation>Lorsque coché, dessine un dégradé linéaire de la première couleur d&apos;arrière-plan à la deuxième couleur d&apos;arrière-plan sur les boutons Snooze. Lorsque décoché, dessine un arrière-plan uni avec la première couleur d&apos;arrière-plan sur les boutons Snooze.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="314"/>
+        <location filename="OptionsDialog.ui" line="322"/>
         <source>First background color for the Snooze button.</source>
         <oldsource>First background color for Snooze button.</oldsource>
         <translation>Première couleur d&apos;arrière-plan pour le bouton Snooze.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="340"/>
+        <location filename="OptionsDialog.ui" line="348"/>
         <source>Second background color for the Snooze button.</source>
         <oldsource>Second background color for Snooze button.</oldsource>
         <translation>Deuxième  couleur d&apos;arrière-plan pour le bouton Snooze.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="366"/>
+        <location filename="OptionsDialog.ui" line="374"/>
         <source>Text color for the Snooze button.</source>
         <oldsource>Text color for Snooze button.</oldsource>
         <translation>Couleur du texte pour le bouton Snooze.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="409"/>
+        <location filename="OptionsDialog.ui" line="417"/>
         <source>When checked, draws a linear gradient from the first background color to the second background color on Close buttons. When unchecked, draws a solid background with the first background color on Close buttons.</source>
         <translation>Lorsque coché, dessine un dégradé linéaire de la première couleur d&apos;arrière-plan à la deuxième couleur d&apos;arrière-plan sur les boutons Fermer. Lorsque décoché, dessine un arrière-plan uni avec la première couleur d&apos;arrière-plan sur les boutons Fermer.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="399"/>
+        <location filename="OptionsDialog.ui" line="407"/>
         <source>First background color for the Close button.</source>
         <oldsource>First background color for Close button.</oldsource>
         <translation>Première couleur d&apos;arrière-plan pour le bouton Fermer.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="425"/>
+        <location filename="OptionsDialog.ui" line="433"/>
         <source>Second background color for the Close button.</source>
         <oldsource>Second background color for Close button.</oldsource>
         <translation>Deuxième  couleur d&apos;arrière-plan pour le bouton Fermer.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="451"/>
+        <location filename="OptionsDialog.ui" line="459"/>
         <source>Text color for the Close button.</source>
         <oldsource>Text color for Close button.</oldsource>
         <translation>Couleur du texte pour le bouton Fermer.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="173"/>
+        <location filename="OptionsDialog.ui" line="181"/>
         <source>Gradient</source>
         <translation>Dégradé</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="213"/>
+        <location filename="OptionsDialog.ui" line="221"/>
         <source>When checked, draws either a solid background with the first background color or a linear gradient from the first background color to the second background color on every toast&apos;s background. When unchecked, the system&apos;s default background color is used.</source>
         <oldsource>When checked, draws either a solid background with the first background color or a gradient background from the first background color to the second background color on every toast&apos;s background. When unchecked, the system&apos;s default background color is used.</oldsource>
         <translation>Lorsque coché, dessine soit un arrière-plan uni avec la première couleur d&apos;arrière-plan ou un dégradé linéaire de la première couleur d&apos;arrière-plan à la deuxieme couleur d&apos;arrière-plan sur l&apos;arrière-plan de chaque toast. Lorsque décoché, la couleur d&apos;arrière-plan par défaut du système est utilisée.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="298"/>
+        <location filename="OptionsDialog.ui" line="306"/>
         <source>When checked, draws either a solid background with the first background color or a linear gradient from the first background color to the second background color on Snooze buttons. When unchecked, the system&apos;s theme or default background color is used.</source>
         <oldsource>When checked, draws either a solid background with the first background color or a gradient background from the first background color to the second background color on Snooze buttons. When unchecked, the system&apos;s theme or default background color is used.</oldsource>
         <translation>Lorsque coché, dessine soit un arrière-plan uni avec la première couleur d&apos;arrière-plan ou un dégradé linéaire de la première couleur d&apos;arrière-plan à la deuxieme couleur d&apos;arrière-plan sur les boutons Snooze. Lorsque décoché, la couleur d&apos;arrière-plan par défaut du système est utilisée.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="383"/>
+        <location filename="OptionsDialog.ui" line="391"/>
         <source>When checked, draws either a solid background with the first background color or a linear gradient from the first background color to the second background color on Close buttons. When unchecked, the system&apos;s theme or default background color is used.</source>
         <oldsource>When checked, draws either a solid background with the first background color or a gradient background from the first background color to the second background color on Close buttons. When unchecked, the system&apos;s theme or default background color is used.</oldsource>
         <translation>Lorsque coché, dessine soit un arrière-plan uni avec la première couleur d&apos;arrière-plan ou un dégradé linéaire de la première couleur d&apos;arrière-plan à la deuxieme couleur d&apos;arrière-plan sur les boutons Fermer. Lorsque décoché, la couleur d&apos;arrière-plan par défaut du système est utilisée.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="163"/>
+        <location filename="OptionsDialog.ui" line="171"/>
         <source>Background</source>
         <translation>Arrière-plan</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="265"/>
+        <location filename="OptionsDialog.ui" line="273"/>
         <source>When checked, uses the specified text color for the message in toasts. When unchecked, the system&apos;s default text color is used.</source>
         <translation>Lorsque coché, utilise la couleur de texte spécifiée pour le message dans les toasts. Lorsque décoché, la couleur de texte par défaut du système est utilisée.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="350"/>
+        <location filename="OptionsDialog.ui" line="358"/>
         <source>When checked, uses the specified text color for Snooze buttons. When unchecked, the system&apos;s default text color is used.</source>
         <translation>Lorsque coché, utilise la couleur de texte spécifiée pour les boutons Snooze. Lorsque décoché, la couleur de texte par défaut du système est utilisée.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="435"/>
+        <location filename="OptionsDialog.ui" line="443"/>
         <source>When checked, uses the specified text color for Close buttons. When unchecked, the system&apos;s default text color is used.</source>
         <translation>Lorsque coché, utilise la couleur de texte spécifiée pour les boutons Fermer. Lorsque décoché, la couleur de texte par défaut du système est utilisée.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="183"/>
+        <location filename="OptionsDialog.ui" line="191"/>
         <source>Text</source>
         <translation>Texte</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="291"/>
+        <location filename="OptionsDialog.ui" line="299"/>
         <source>Snooze button</source>
         <translation>Bouton Snooze</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="376"/>
+        <location filename="OptionsDialog.ui" line="384"/>
         <source>Close button</source>
         <translation>Bouton Fermer</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="156"/>
+        <location filename="OptionsDialog.ui" line="164"/>
         <source>Colors</source>
         <translation>Couleurs</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="463"/>
+        <location filename="OptionsDialog.ui" line="483"/>
         <source>When checked, uses the native frame border from the windowing system. When unchecked, removes the native frame from the windowing system and draws an outset border.</source>
         <translation>Lorsque coché, utilise la bordure de cadre native du système de fenêtres. Lorsque décoché, retire le cadre natif du système de fenêtres et dessine une bordure en relief.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="466"/>
+        <location filename="OptionsDialog.ui" line="486"/>
         <source>Use &amp;native border</source>
         <oldsource>Use native border</oldsource>
         <translation>Utiliser les bordures &amp;natives</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="489"/>
+        <location filename="OptionsDialog.ui" line="524"/>
         <source>Top-left corner</source>
         <translation>Coin haut-gauche</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="492"/>
+        <location filename="OptionsDialog.ui" line="527"/>
         <source>Position the first toast in the top-left corner.</source>
         <translation>Positionne le premier toast dans le coin supérieur gauche.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="502"/>
+        <location filename="OptionsDialog.ui" line="537"/>
         <source>Top-right corner</source>
         <translation>Coin haut-droit</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="505"/>
+        <location filename="OptionsDialog.ui" line="540"/>
         <source>Position the first toast in the top-right corner.</source>
         <translation>Positionne le premier toast dans le coin supérieur droit.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="528"/>
+        <location filename="OptionsDialog.ui" line="563"/>
         <source>Bottom-left corner</source>
         <translation>Coin bas-gauche</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="531"/>
+        <location filename="OptionsDialog.ui" line="566"/>
         <source>Position the first toast in the bottom-left corner.</source>
         <translation>Positionne le premier toast dans le coin inférieur gauche.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="541"/>
+        <location filename="OptionsDialog.ui" line="576"/>
         <source>Bottom-right corner</source>
         <translation>Coin bas-droite</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="544"/>
+        <location filename="OptionsDialog.ui" line="579"/>
         <source>Position the first toast in the bottom-right corner.</source>
         <translation>Positionne le premier toast dans le coin inférieur droit.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="479"/>
+        <location filename="OptionsDialog.ui" line="514"/>
         <source>&amp;Corner:</source>
         <translation>&amp;Coin:</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="566"/>
+        <location filename="OptionsDialog.ui" line="473"/>
+        <source>When checked, toasts will be resized to fit their contents.</source>
+        <translation>Lorsque coché, les toasts seront redimensionnés pour s&apos;adapter à leur contenu.</translation>
+    </message>
+    <message>
+        <location filename="OptionsDialog.ui" line="476"/>
+        <source>Au&amp;to size</source>
+        <translation>R&amp;edimensionnement automatique</translation>
+    </message>
+    <message>
+        <location filename="OptionsDialog.ui" line="601"/>
         <source>Direction:</source>
         <translation>Direction:</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="573"/>
+        <location filename="OptionsDialog.ui" line="608"/>
         <source>Stack toasts horizontally (left to right/right to left)</source>
         <translation>Empile les toasts horizontalement (de gauche à droite/de droite à gauche)</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="576"/>
+        <location filename="OptionsDialog.ui" line="611"/>
         <source>&amp;Horizontal</source>
         <oldsource>Horizontal</oldsource>
         <translation>&amp;Horizontal</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="583"/>
+        <location filename="OptionsDialog.ui" line="618"/>
         <source>Stack toasts vertically (top-down/bottom-up)</source>
         <translation>Empile les toasts verticalement (de haut en bas/de bas en haut)</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="586"/>
+        <location filename="OptionsDialog.ui" line="621"/>
         <source>&amp;Vertical</source>
         <oldsource>Vertical</oldsource>
         <translation>&amp;Vertical</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="612"/>
+        <location filename="OptionsDialog.ui" line="647"/>
         <source>Toast emergence:</source>
         <translation>Apparition des toasts:</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="625"/>
+        <location filename="OptionsDialog.ui" line="660"/>
         <source>Toasts appear without any animation.</source>
         <translation>Les toasts apparaissent sans animation.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="628"/>
+        <location filename="OptionsDialog.ui" line="663"/>
         <source>S&amp;udden</source>
         <translation>&amp;Brusque</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="638"/>
+        <location filename="OptionsDialog.ui" line="673"/>
         <source>Toasts appear at minimum size and expand horizontally or vertically (depending on the direction set above).</source>
         <translation>Les toasts apparaissent à leur taille minimale et s&apos;agrandissent horizontalement ou verticalement (selon l&apos;option de direction ci-dessus).</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="641"/>
+        <location filename="OptionsDialog.ui" line="676"/>
         <source>&amp;Roll</source>
         <translation>&amp;Rouler</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="651"/>
+        <location filename="OptionsDialog.ui" line="686"/>
         <source>Toasts fade in from completely transparent to completely opaque.</source>
         <translation>Les toasts apparaissent avec un effet de fondu, de complètement transparents à complètement opaques.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="654"/>
+        <location filename="OptionsDialog.ui" line="689"/>
         <source>&amp;Fade</source>
         <translation>&amp;Fondu</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="679"/>
+        <location filename="OptionsDialog.ui" line="714"/>
         <source>Check this to play a sound when a toast appears.</source>
         <translation>Cochez ceci pour jouer un son quand un toast apparaît.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="682"/>
+        <location filename="OptionsDialog.ui" line="717"/>
         <source>&amp;Play sound:</source>
         <translation>&amp;Son à jouer:</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="689"/>
+        <location filename="OptionsDialog.ui" line="724"/>
         <source>Type the name of the sound to play when a toast appears, or click the &lt;b&gt;...&lt;/b&gt; button to browse for the file on your file system.</source>
         <translation>Tapez le nom du son à jouer quand un toast apparait, ou cliquez sur le bouton &lt;b&gt;...&lt;/b&gt; pour rechercher le fichier sur votre système de fichiers.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="696"/>
+        <location filename="OptionsDialog.ui" line="731"/>
         <source>Browse for a sound file on your file system to play when a toast appears.</source>
         <translation>Recherchez un fichier de son sur votre système de fichiers à jouer quand un toast apparaît.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="710"/>
+        <location filename="OptionsDialog.ui" line="745"/>
         <source>Snooze &amp;duration:</source>
         <translation>&amp;Durée du snooze:</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="726"/>
+        <location filename="OptionsDialog.ui" line="761"/>
         <source>The number of minutes before which a toast reappears since the moment the Snooze button was clicked.</source>
         <translation>Le délai en minutes avant qu&apos;un toast ne réapparaisse à compter du moment où le bouton Snooze a été cliqué.</translation>
     </message>
     <message>
-        <location filename="OptionsDialog.ui" line="736"/>
+        <location filename="OptionsDialog.ui" line="771"/>
         <source>minutes</source>
         <translation>minutes</translation>
     </message>

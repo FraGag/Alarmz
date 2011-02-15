@@ -7,7 +7,7 @@ SetCompressor /SOLID lzma
 RequestExecutionLevel user
 
 !define PRODUCT_NAME "Alarmz"
-!define PRODUCT_VERSION "2.0.1"
+!define PRODUCT_VERSION "2.0.2"
 !define PRODUCT_PUBLISHER "Francis Gagné"
 !define PRODUCT_WEB_SITE "http://fragag.ifrance.com/"
 !define PRODUCT_DIR_REGKEY "Software\Microsoft\Windows\CurrentVersion\App Paths\Alarmz.exe"
@@ -55,7 +55,7 @@ var ICONS_GROUP
 ; MUI end ------
 
 Name "${PRODUCT_NAME} ${PRODUCT_VERSION}"
-OutFile "Alarmz201Setup.exe"
+OutFile "Alarmz202Setup.exe"
 InstallDir "$PROGRAMFILES\Alarmz"
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 ShowInstDetails show

@@ -97,6 +97,7 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
     setBackgroundColor(this->ui->closeButtonBackgroundColor1Button, settings.closeButtonBackgroundColor1());
     setBackgroundColor(this->ui->closeButtonBackgroundColor2Button, settings.closeButtonBackgroundColor2());
     setBackgroundColor(this->ui->closeButtonTextColorButton, settings.closeButtonTextColor());
+    this->ui->autoSizeCheckBox->setChecked(settings.autoSize());
     this->ui->useNativeBorderCheckBox->setChecked(settings.useNativeBorder());
     switch (settings.corner()) {
     case 0:
@@ -200,6 +201,7 @@ void OptionsDialog::apply()
     settings.setCloseButtonBackgroundColor2(this->ui->closeButtonBackgroundColor2Button->palette().background().color());
     settings.setCloseButtonTextColor(this->ui->closeButtonTextColorButton->palette().background().color());
 
+    settings.setAutoSize(this->ui->autoSizeCheckBox->isChecked());
     settings.setUseNativeBorder(this->ui->useNativeBorderCheckBox->isChecked());
     settings.setCorner(
             this->ui->topLeftCornerRadioButton->isChecked() ? 0 :

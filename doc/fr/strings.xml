@@ -297,6 +297,13 @@
     <string id="option_toasts_colors_snoozebutton_desc">Les couleurs sur cette ligne s'applique au bouton Snooze.</string>
     <string id="option_toasts_colors_closebutton">Bouton Fermer</string>
     <string id="option_toasts_colors_closebutton_desc">Les couleurs sur cette ligne s'applique au bouton Fermer.</string>
+    <string id="option_toasts_autosize">
+        R<html:span class="accesskey">e</html:span>dimensionnement automatique
+    </string>
+    <string id="option_toasts_autosize_desc">
+        Lorsque coché, les toasts seront redimensionnées pour s'adapter à leur contenu. Lorsque décoché, les toasts auront une
+        taille fixe.
+    </string>
     <string id="option_toasts_usenativeborder">
         Utiliser les bordures <html:span class="accesskey">n</html:span>atives
     </string>

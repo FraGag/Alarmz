@@ -286,6 +286,12 @@
     <string id="option_toasts_colors_snoozebutton_desc">Colors on this line apply to the Snooze button.</string>
     <string id="option_toasts_colors_closebutton">Close button</string>
     <string id="option_toasts_colors_closebutton_desc">Colors on this line apply to the Close button.</string>
+    <string id="option_toasts_autosize">
+        Au<html:span class="accesskey">t</html:span>o size
+    </string>
+    <string id="option_toasts_autosize_desc">
+        When checked, toasts will be resized to fit their contents. When unchecked, toasts will have a fixed size.
+    </string>
     <string id="option_toasts_usenativeborder">
         Use <html:span class="accesskey">n</html:span>ative border
     </string>
