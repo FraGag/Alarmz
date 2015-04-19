@@ -1,5 +1,5 @@
 /* Alarmz - A program to show user-defined alarms
-   Copyright (C) 2010 Francis Gagné <fragag1@gmail.com>
+   Copyright (C) 2010, 2015 Francis Gagné <fragag1@gmail.com>
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -49,7 +49,6 @@ public:
     static QString applicationDirPath;
 
     static Settings &instance() { return _instance; }
-    static Qt::CaseSensitivity isFileSystemCaseSensitive();
 
     void reloadTranslation();
 

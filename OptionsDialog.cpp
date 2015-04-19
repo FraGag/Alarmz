@@ -1,5 +1,5 @@
 /* Alarmz - A program to show user-defined alarms
-   Copyright (C) 2010 Francis Gagné <fragag1@gmail.com>
+   Copyright (C) 2010, 2015 Francis Gagné <fragag1@gmail.com>
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -46,7 +46,7 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
         QLocale enUSLocale(QLocale::English, QLocale::UnitedStates);
         this->ui->languageComboBox->addItem(QString("%1 (%2)").arg(QLocale::languageToString(QLocale::English), QLocale::countryToString(QLocale::UnitedStates)), "en_US");
         QDir appDir(Settings::applicationDirPath);
-        QRegExp regExp("Alarmz_([a-z]{2}(?:_[A-Z]{2})?).qm", Settings::isFileSystemCaseSensitive());
+        QRegExp regExp("Alarmz_([a-z]{2}(?:_[A-Z]{2})?).qm", Qt::CaseInsensitive);
         foreach (const QString &file, appDir.entryList(QDir::Files)) {
             if (regExp.exactMatch(file) && regExp.captureCount() >= 1) {
                 QLocale locale(regExp.cap(1));

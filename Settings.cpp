@@ -1,5 +1,5 @@
 /* Alarmz - A program to show user-defined alarms
-   Copyright (C) 2010 Francis Gagné <fragag1@gmail.com>
+   Copyright (C) 2010, 2015 Francis Gagné <fragag1@gmail.com>
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -20,7 +20,6 @@
 #ifdef ALARMZ_BUILD_ENVIRONMENT
 # include <QDebug>
 #endif
-#include <QFSFileEngine>
 #include <QVariant>
 #include <QWidget>
 #ifdef Q_OS_WIN
@@ -30,20 +29,6 @@
 namespace Alarmz {
 
 QString Settings::applicationDirPath;
-
-static Qt::CaseSensitivity fsCaseSensitive;
-
-Qt::CaseSensitivity Settings::isFileSystemCaseSensitive()
-{
-    static bool fsCaseSensitiveInitialized = false;
-    if (!fsCaseSensitiveInitialized) {
-        QFSFileEngine fileEngine;
-        fsCaseSensitive = fileEngine.caseSensitive() ? Qt::CaseSensitive : Qt::CaseInsensitive;
-        fsCaseSensitiveInitialized = true;
-    }
-
-    return fsCaseSensitive;
-}
 
 #ifdef Q_OS_WIN
 
