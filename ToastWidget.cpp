@@ -1,5 +1,5 @@
 /* Alarmz - A program to show user-defined alarms
-   Copyright (C) 2010 Francis Gagné <fragag1@gmail.com>
+   Copyright (C) 2010, 2015 Francis Gagné <fragag1@gmail.com>
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -64,8 +64,6 @@ ToastWidget::~ToastWidget()
 void ToastWidget::pop(Alarm *alarm)
 {
     this->ui->messageLabel->setText(alarm->message());
-
-    visibleInstances.append(this);
     this->pop();
 }
 
@@ -124,6 +122,7 @@ void ToastWidget::reposition()
 
 void ToastWidget::pop()
 {
+    visibleInstances.append(this);
     this->ui->widget->adjustSize();
     switch (Settings::instance().toastEmergence()) {
     case 1:
