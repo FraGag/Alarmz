@@ -1,5 +1,5 @@
 # Alarmz - A program to show user-defined alarms
-# Copyright (C) 2010 Francis Gagné <fragag1@gmail.com>
+# Copyright (C) 2010, 2015 Francis Gagné <fragag1@gmail.com>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,7 +17,7 @@
 # -------------------------------------------------
 # Project created by QtCreator 2010-05-04T13:32:19
 # -------------------------------------------------
-QT += xml
+QT += multimedia widgets xml
 TARGET = Alarmz
 TEMPLATE = app
 SOURCES += main.cpp \
