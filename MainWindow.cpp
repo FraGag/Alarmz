@@ -141,7 +141,7 @@ void MainWindow::openFile(const QString &fileName)
 
     QVector<Alarm *> alarms;
     const QDomNodeList nodes(doc.documentElement().childNodes());
-    for (uint i = 0; i < nodes.length(); i++) {
+    for (int i = 0; i < nodes.length(); i++) {
         QDomNode node(nodes.item(i));
         switch (node.nodeType()) {
         case QDomNode::ElementNode: {

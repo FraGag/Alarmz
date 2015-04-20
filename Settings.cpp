@@ -397,6 +397,7 @@ void Settings::setAutoSave(bool value)
 
 void Settings::setRunOnSessionStartup(bool value)
 {
+    Q_UNUSED(value)
 #ifdef Q_OS_WIN
     HKEY hkey;
     if (RegCreateKeyEx(HKEY_CURRENT_USER, TEXT("Software\\Microsoft\\Windows\\CurrentVersion\\Run"), 0, 0, REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, 0, &hkey, NULL) == ERROR_SUCCESS) {

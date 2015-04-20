@@ -186,6 +186,7 @@ void ToastWidget::closeEvent(QCloseEvent *e)
 
 void ToastWidget::paintEvent(QPaintEvent *e)
 {
+    Q_UNUSED(e)
     const Settings &settings = Settings::instance();
     int w = this->width(), h = this->height();
     QPainter painter(this);
