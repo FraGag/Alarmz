@@ -33,7 +33,7 @@ AddEditAlarmDialog::AddEditAlarmDialog(QWidget *parent) :
     this->ui->frequencyComboBox->addItem(Alarm::tr(Alarm::LocalizedFrequencyWeekly));
     this->ui->frequencyComboBox->addItem(Alarm::tr(Alarm::LocalizedFrequencyMonthly));
     this->ui->frequencyComboBox->addItem(Alarm::tr(Alarm::LocalizedFrequencyYearly));
-    this->ui->frequencyComboBox->setCurrentIndex(1);
+    this->ui->frequencyComboBox->setCurrentIndex(Daily);
 
     this->ui->displayMethodComboBox->addItem(Alarm::tr(Alarm::LocalizedDisplayMethodMsgBox_NoIcon));
     this->ui->displayMethodComboBox->addItem(Alarm::tr(Alarm::LocalizedDisplayMethodMsgBox_Critical));
@@ -41,6 +41,7 @@ AddEditAlarmDialog::AddEditAlarmDialog(QWidget *parent) :
     this->ui->displayMethodComboBox->addItem(Alarm::tr(Alarm::LocalizedDisplayMethodMsgBox_Exclamation));
     this->ui->displayMethodComboBox->addItem(Alarm::tr(Alarm::LocalizedDisplayMethodMsgBox_Information));
     this->ui->displayMethodComboBox->addItem(Alarm::tr(Alarm::LocalizedDisplayMethodToast));
+    this->ui->displayMethodComboBox->setCurrentIndex(Toast);
 }
 
 AddEditAlarmDialog::~AddEditAlarmDialog()
