@@ -1,5 +1,5 @@
 /* Alarmz - A program to show user-defined alarms
-   Copyright (C) 2010 Francis Gagné <fragag1@gmail.com>
+   Copyright (C) 2010, 2015 Francis Gagné <fragag1@gmail.com>
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -473,7 +473,7 @@ void MainWindow::on_actionAbout_triggered()
             this,
             "Alarmz",
             "<p><strong>Alarmz v. " ALARMZ_VERSION_STR_SHORT "</strong></p>"
-            "<p>Copyright (C) 2010 Francis Gagné</p>"
+            "<p>Copyright (C) 2010, 2015 Francis Gagné</p>"
             "<p>" + tr("English translation: Francis Gagné", "Translators, leave your name here!") + "</p>"
             "<p>" + tr("The program's icon comes from the BeOS operating system.") + "</p>"
             "<p>" + tr("Icons in the menus and tool bars come from the Silk icon set.") + " <a href=\"http://www.famfamfam.com/lab/icons/silk/\">http://www.famfamfam.com/lab/icons/silk/</a></p>"
