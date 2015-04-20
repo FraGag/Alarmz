@@ -9,9 +9,15 @@ To install Alarmz on Windows, an NSIS install script is provided in the nsi/
 subdirectory. Copy the following files in the nsi/ subdirectory before compiling
 the installer:
 - Alarmz.exe
-- QtCore4.dll
-- QtGui4.dll
-- QtXml4.dll
+- icudt*.dll
+- icuin*.dll
+- icuuc*.dll
+- Qt5Core.dll
+- Qt5Gui.dll
+- Qt5Multimedia.dll
+- Qt5Network.dll
+- Qt5Widgets.dll
+- Qt5Xml.dll
 - Alarmz_fr.qm
 - qt_fr.qm
 - doc/style.css
@@ -29,9 +35,12 @@ the installer:
 - doc/fr/menus.html
 - doc/fr/options.html
 - doc/fr/toasts.html
-- imageformats/qico4.dll (from plugins/imageformats/ of your Qt installation)
+- qtaudio_windows.dll (copy from plugins/audio from Qt installation)
+- qico.dll (copy from plugins/imageformats from Qt installation)
+- qwindows.dll (copy from plugins/platforms from Qt installation)
 
 If you are using Qt based on MinGW, you must also copy the following files from
 the bin/ subdirectory of your MinGW installation:
 - libgcc_s_dw2-1.dll
-- mingwm10.dll
+- libstdc++-6.dll
+- libwinpthread-1.dll
