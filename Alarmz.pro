@@ -50,6 +50,7 @@ win32:RC_FILE += Alarmz.rc
 OTHER_FILES += Alarmz.ico \
     Alarmz.rc
 Debug:DEFINES += ALARMZ_BUILD_ENVIRONMENT
+win32-msvc*:LIBS += advapi32.lib
 
 # Translations
 TRANSLATIONS = Alarmz_fr.ts
