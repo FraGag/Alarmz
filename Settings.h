@@ -46,6 +46,7 @@ private:
     void reloadTranslation(const QString &prefix, QTranslator &translator);
 
 public:
+    static QString applicationFilePath;
     static QString applicationDirPath;
 
     static Settings &instance() { return _instance; }

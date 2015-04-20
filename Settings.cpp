@@ -20,6 +20,9 @@
 #ifdef ALARMZ_BUILD_ENVIRONMENT
 # include <QDebug>
 #endif
+#include <QDir>
+#include <QFile>
+#include <QStandardPaths>
 #include <QVariant>
 #include <QWidget>
 #ifdef Q_OS_WIN
@@ -28,9 +31,10 @@
 
 namespace Alarmz {
 
+QString Settings::applicationFilePath;
 QString Settings::applicationDirPath;
 
-#ifdef Q_OS_WIN
+#if defined(Q_OS_WIN)
 
 static QString sessionStartupCommand()
 {
@@ -72,6 +76,36 @@ static QString sessionStartupCommand()
 
     // Append the -b command line argument to tell Alarmz to start hidden and load the file specified in fileToOpenOnStartup()
     command.append(" -b");
+    return command;
+}
+
+#elif defined(ALARMZ_XDG_AUTOSTART)
+
+static QString sessionStartupCommand()
+{
+    QString command(Settings::applicationFilePath);
+
+    // http://standards.freedesktop.org/desktop-entry-spec/latest/ar01s06.html
+
+    // If the executable path contains any reserved character,
+    // the path must be quoted.
+    if (command.contains(QRegExp("[ \t\n\"'\\\\><~|&;$*?#()`]"))) {
+        // Escape the characters that require escaping.
+        command.replace(QRegExp("([\"`$\\\\])"), "\\\\1");
+        
+        // Quote the path.
+        command = '"' + command + '"';
+    }
+
+    // Append the -b command line argument to tell Alarmz to start hidden and load the file specified in fileToOpenOnStartup()
+    command.append(" -b");
+
+    // Backslashes must be escaped again.
+    command.replace('\\', "\\\\");
+
+    // Percent signs must be escaped.
+    command.replace('%', "%%");
+
     return command;
 }
 
@@ -233,13 +267,15 @@ static bool runOnSessionStartup(HKEY hkey)
 
 bool Settings::runOnSessionStartup() const
 {
-#ifdef Q_OS_WIN
+#if defined(Q_OS_WIN)
     HKEY hkey;
     if (RegCreateKeyEx(HKEY_CURRENT_USER, TEXT("Software\\Microsoft\\Windows\\CurrentVersion\\Run"), 0, 0, REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, 0, &hkey, NULL) == ERROR_SUCCESS) {
         bool result = Alarmz::runOnSessionStartup(hkey);
         (void)RegCloseKey(hkey);
         return result;
     }
+#elif defined(ALARMZ_XDG_AUTOSTART)
+    return !QStandardPaths::locate(QStandardPaths::GenericConfigLocation, "autostart/Alarmz.desktop").isEmpty();
 #endif
 
     return false;
@@ -247,7 +283,7 @@ bool Settings::runOnSessionStartup() const
 
 bool Settings::canSetRunOnSessionStartup() const
 {
-#if defined(Q_OS_WIN) // || defined(Q_OS_...)
+#if defined(Q_OS_WIN) || defined(ALARMZ_XDG_AUTOSTART)
     return true;
 #else
     return false;
@@ -398,7 +434,7 @@ void Settings::setAutoSave(bool value)
 void Settings::setRunOnSessionStartup(bool value)
 {
     Q_UNUSED(value)
-#ifdef Q_OS_WIN
+#if defined(Q_OS_WIN)
     HKEY hkey;
     if (RegCreateKeyEx(HKEY_CURRENT_USER, TEXT("Software\\Microsoft\\Windows\\CurrentVersion\\Run"), 0, 0, REG_OPTION_NON_VOLATILE, KEY_ALL_ACCESS, 0, &hkey, NULL) == ERROR_SUCCESS) {
         static TCHAR valueName[] = TEXT("Alarmz");
@@ -420,6 +456,24 @@ void Settings::setRunOnSessionStartup(bool value)
         }
 
         (void)RegCloseKey(hkey);
+    }
+#elif defined(ALARMZ_XDG_AUTOSTART)
+    // Find the XDG configuration path.
+    QString path(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation));
+    QDir dir(path);
+    QString desktopFilePath(dir.filePath("autostart/Alarmz.desktop"));
+    
+    if (value) {
+        // Make sure the autostart subdirectory exists.
+        if (dir.mkpath("autostart")) {
+            QString fileContents = "[Desktop Entry]\nExec=" + sessionStartupCommand() + "\nName=Alarmz\nType=Application\n";
+            QFile desktopFile(desktopFilePath);
+            if (desktopFile.open(QIODevice::WriteOnly)) {
+                desktopFile.write(fileContents.toUtf8());
+            }
+        }
+    } else {
+        QFile::remove(desktopFilePath);
     }
 #endif
 }
